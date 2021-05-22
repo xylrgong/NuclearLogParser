@@ -1,0 +1,282 @@
+文件说明：SSH登录交换机，使用命令"show logging buffered", "show logging hosts", "show logging trap"取得日志
+
+(Hirschmann MACH) #show logging buffered
+
+Buffered (In-Memory) Logging        : enabled
+Buffered Logging Wrapping Behavior  : On
+Buffered Log Count                  : 5248
+
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5137 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.38 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5138 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.38 = 0 days 22:26:44
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5139 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.39 = Authent. Failure: Unit: 1 IP Address: 192.168.69.156
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5140 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.39 = 0 days 22:40:55
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5141 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.40 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5142 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.40 = 0 days 22:44:50
+
+--More-- or (q)uit
+
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5143 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.41 = hmConfigurationChangedTrap:  ConfigurationStatus: notInSync
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5144 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.41 = 0 days 22:52:34
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5145 %% admin@[75751]:SNMPv3 GET:hmAgentLoginSessionIndex.0 = 0
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5146 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.0 = Cold Start: Unit: 0
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5147 %% admin@[75751]:SNMPv3 GET:hmAgentLoginSessionUserName.0 = admin
+<5>Jan  2 00:50:46 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5148 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.1 = Link Up: Unit: 1 Slot: 1 Port: 12
+<5>Jan  2 00:50:47 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5149 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:50:47 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5150 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:50:52 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5151 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+
+--More-- or (q)uit
+
+<5>Jan  2 00:50:52 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5152 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5153 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5154 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5155 %% admin@[75751]:SNMPv3 SET:hmMgmtSESpinLock.0 = 33
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5156 %% admin@[75751]:SNMPv3 SET:hmAgentSnmpLogGetRequest.0 = 1
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5157 %% admin@[75751]:SNMPv3 SET:hmAgentSnmpLogSetRequest.0 = 1
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5158 %% admin@[75751]:SNMPv3 SET:hmAgentSnmpLogGetSeverity.0 = 5
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5159 %% admin@[75751]:SNMPv3 SET:hmAgentSnmpLogSetSeverity.0 = 5
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5160 %% admin@[75751]:SNMPv3 GET:hmMgmtSeReturnCode.33 = NO_SUCH_INSTANCE_EXCEPTION
+
+--More-- or (q)uit
+
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5161 %% admin@[75751]:SNMPv3 SET:hmMgmtSESpinLock.0 = 34
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5162 %% admin@[75751]:SNMPv3 SET:hmAgentLogSyslogAdminStatus.0 = 1
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5163 %% admin@[75751]:SNMPv3 GET:hmMgmtSeReturnCode.34 = NO_SUCH_INSTANCE_EXCEPTION
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5164 %% admin@[75751]:SNMPv3 SET:hmMgmtSESpinLock.0 = 35
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(380) 5165 %% admin@[75751]:SNMPv3 SET:hmAgentLogHostTableRowStatus.1 = 1
+<5>Jan  2 00:50:57 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5166 %% admin@[75751]:SNMPv3 GET:hmMgmtSeReturnCode.35 = NO_SUCH_INSTANCE_EXCEPTION
+<5>Jan  2 00:51:02 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5167 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:51:02 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5168 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:51:07 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5169 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:07 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5170 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:51:12 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5171 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:51:12 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5172 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5173 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5174 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5175 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.0 = Cold Start: Unit: 0
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5176 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.0 = 0 days 00:00:22
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5177 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.1 = Link Up: Unit: 1 Slot: 1 Port: 12
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5178 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.1 = 0 days 00:00:24
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5179 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.2 = Link Up: Unit: 1 Slot: 1 Port: 11
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5180 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.2 = 0 days 00:00:24
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5181 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.3 = Link Up: Unit: 1 Slot: 1 Port: 4
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5182 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.3 = 0 days 00:00:25
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5183 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.4 = Link Up: Unit: 1 Slot: 1 Port: 13
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5184 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.4 = 0 days 00:00:25
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5185 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.5 = Link Up: Unit: 1 Slot: 1 Port: 15
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5186 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.5 = 0 days 00:00:26
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5187 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.6 = Link Up: Unit: 1 Slot: 1 Port: 10
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5188 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.6 = 0 days 00:00:26
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5189 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.7 = New Spanning Tree Root: 0, Unit: 1
+<5>Jan  2 00:51:17 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5190 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.7 = 0 days 00:00:26
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5191 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.8 = Spanning Tree Topology Change: Unit: 1 Slot: 1 Port: 4
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5192 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.8 = 0 days 00:00:26
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5193 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.9 = hmPowerSupply:  Index: 1 State: ok
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5194 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.9 = 0 days 00:00:26
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5195 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.10 = Link Up: Unit: 1 Slot: 1 Port: 9
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5196 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.10 = 0 days 00:00:29
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5197 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.11 = Link Down: Unit: 1 Slot: 1 Port: 13
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5198 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.11 = 0 days 00:00:29
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5199 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.12 = Link Down: Unit: 1 Slot: 1 Port: 15
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5200 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.12 = 0 days 00:00:30
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5201 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.13 = Link Up: Unit: 1 Slot: 1 Port: 13
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5202 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.13 = 0 days 00:00:32
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5203 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.14 = Link Up: Unit: 1 Slot: 1 Port: 15
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5204 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.14 = 0 days 00:00:33
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5205 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.15 = Link Down: Unit: 1 Slot: 1 Port: 12
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5206 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.15 = 0 days 18:56:20
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5207 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.16 = Link Up: Unit: 1 Slot: 1 Port: 12
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5208 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.16 = 0 days 18:56:22
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5209 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.17 = Link Down: Unit: 1 Slot: 1 Port: 9
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5210 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.17 = 0 days 18:56:29
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5211 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.18 = Link Down: Unit: 1 Slot: 1 Port: 10
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5212 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.18 = 0 days 18:56:29
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5213 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.19 = Link Up: Unit: 1 Slot: 1 Port: 10
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5214 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.19 = 0 days 18:56:34
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5215 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.20 = Link Up: Unit: 1 Slot: 1 Port: 9
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5216 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.20 = 0 days 18:56:34
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5217 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.21 = Link Down: Unit: 1 Slot: 1 Port: 9
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5218 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.21 = 0 days 18:56:35
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5219 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.22 = Link Up: Unit: 1 Slot: 1 Port: 9
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5220 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.22 = 0 days 18:56:39
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5221 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.23 = Link Down: Unit: 1 Slot: 1 Port: 9
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5222 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.23 = 0 days 18:56:54
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5223 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.24 = Link Up: Unit: 1 Slot: 1 Port: 9
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5224 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.24 = 0 days 18:57:00
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5225 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.25 = Failed User Login: Unit: 1 User ID: admin
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5226 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.25 = 0 days 19:41:52
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5227 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.26 = hmConfigurationChangedTrap:  ConfigurationStatus: notInSync
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5228 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.26 = 0 days 19:42:53
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5229 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.27 = Link Up: Unit: 1 Slot: 1 Port: 8
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5230 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.27 = 0 days 20:08:14
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5231 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.28 = Link Down: Unit: 1 Slot: 1 Port: 8
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5232 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.28 = 0 days 20:12:23
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5233 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.29 = hmConfigurationSavedTrap:  AutoconfigAdapterStatus: notPresent
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5234 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.29 = 0 days 21:33:20
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5235 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.30 = Failed User Login: Unit: 1 User ID: show syslog
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5236 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.30 = 0 days 22:01:37
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5237 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.31 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5238 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.31 = 0 days 22:02:24
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5239 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.32 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5240 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.32 = 0 days 22:14:44
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5241 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.33 = Authent. Failure: Unit: 1 IP Address: 192.168.69.156
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5242 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.33 = 0 days 22:15:12
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5243 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.34 = Authent. Failure: Unit: 1 IP Address: 192.168.69.156
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5244 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.34 = 0 days 22:15:59
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5245 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.35 = Authent. Failure: Unit: 1 IP Address: 192.168.69.156
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5246 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.35 = 0 days 22:17:59
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5247 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.36 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5248 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.36 = 0 days 22:24:01
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5249 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.37 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5250 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.37 = 0 days 22:25:05
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5251 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.38 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5252 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.38 = 0 days 22:26:44
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5253 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.39 = Authent. Failure: Unit: 1 IP Address: 192.168.69.156
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5254 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.39 = 0 days 22:40:55
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5255 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.40 = Multiple Users: Unit: 1 Slot: 4 Port: 1
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5256 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.40 = 0 days 22:44:50
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5257 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.41 = hmConfigurationChangedTrap:  ConfigurationStatus: notInSync
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5258 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogSystemTime.41 = 0 days 22:52:34
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5259 %% admin@[75751]:SNMPv3 GET:hmAgentLoginSessionIndex.0 = 0
+
+--More-- or (q)uit
+
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5260 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.0 = Cold Start: Unit: 0
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5261 %% admin@[75751]:SNMPv3 GET:hmAgentLoginSessionUserName.0 = admin
+<5>Jan  2 00:51:18 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5262 %% admin@[75751]:SNMPv3 GET:hmAgentTrapLogTrap.1 = Link Up: Unit: 1 Slot: 1 Port: 12
+<5>Jan  2 00:51:22 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5263 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:51:22 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5264 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:51:27 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5265 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:51:27 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5266 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+<5>Jan  2 00:51:32 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5267 %% admin@[75751]:SNMPv3 GET:hmConfigurationStatus.0 = 2
+<5>Jan  2 00:51:32 192.168.69.11 SNMP[40945496]: ../shared/dosnmpv3.c(376) 5268 %% admin@[75751]:SNMPv3 GET:hmPNIONumActiveApplicationRelations.0 = 0
+
+--More-- or (q)uit
+
+
+
+(Hirschmann MACH) #show logging hosts
+
+Index     IP Address       Severity   Port     Status
+-----  -----------------  ----------  ----  -------------
+1      192.168.69.130     critical    514   Active       
+
+(Hirschmann MACH) #show logging traplogs
+
+Number of Traps Since Last Reset............... 42
+Trap Log Capacity.............................. 256
+Number of Traps Since Log Last Viewed.......... 0
+
+Log System Up Time           Trap
+--- ------------------------ -------------------------------------------------
+  0 0 days 22:52:34          hmConfigurationChangedTrap:                     
+                             ConfigurationStatus: notInSync                  
+  1 0 days 22:44:50          Multiple Users: Unit: 1 Slot: 4 Port: 1         
+  2 0 days 22:40:55          Authent. Failure: Unit: 1 IP Address:           
+                             192.168.69.156                                  
+  3 0 days 22:26:44          Multiple Users: Unit: 1 Slot: 4 Port: 1         
+  4 0 days 22:25:05          Multiple Users: Unit: 1 Slot: 4 Port: 1         
+  5 0 days 22:24:01          Multiple Users: Unit: 1 Slot: 4 Port: 1         
+  6 0 days 22:17:59          Authent. Failure: Unit: 1 IP Address:           
+                             192.168.69.156                                  
+  7 0 days 22:15:59          Authent. Failure: Unit: 1 IP Address:           
+                             192.168.69.156                                  
+
+--More-- or (q)uit
+
+
+
+Log System Up Time           Trap
+--- ------------------------ -------------------------------------------------
+  8 0 days 22:15:12          Authent. Failure: Unit: 1 IP Address:           
+                             192.168.69.156                                  
+  9 0 days 22:14:44          Multiple Users: Unit: 1 Slot: 4 Port: 1         
+ 10 0 days 22:02:24          Multiple Users: Unit: 1 Slot: 4 Port: 1         
+ 11 0 days 22:01:37          Failed User Login: Unit: 1 User ID: show syslog 
+ 12 0 days 21:33:20          hmConfigurationSavedTrap:                       
+                             AutoconfigAdapterStatus: notPresent             
+ 13 0 days 20:12:23          Link Down: Unit: 1 Slot: 1 Port: 8              
+ 14 0 days 20:08:14          Link Up: Unit: 1 Slot: 1 Port: 8                
+ 15 0 days 19:42:53          hmConfigurationChangedTrap:                     
+                             ConfigurationStatus: notInSync                  
+ 16 0 days 19:41:52          Failed User Login: Unit: 1 User ID: admin       
+ 17 0 days 18:57:00          Link Up: Unit: 1 Slot: 1 Port: 9                
+ 18 0 days 18:56:54          Link Down: Unit: 1 Slot: 1 Port: 9              
+ 19 0 days 18:56:39          Link Up: Unit: 1 Slot: 1 Port: 9                
+
+--More-- or (q)uit
+
+
+
+Log System Up Time           Trap
+--- ------------------------ -------------------------------------------------
+ 20 0 days 18:56:35          Link Down: Unit: 1 Slot: 1 Port: 9              
+ 21 0 days 18:56:34          Link Up: Unit: 1 Slot: 1 Port: 9                
+ 22 0 days 18:56:34          Link Up: Unit: 1 Slot: 1 Port: 10               
+ 23 0 days 18:56:29          Link Down: Unit: 1 Slot: 1 Port: 10             
+ 24 0 days 18:56:29          Link Down: Unit: 1 Slot: 1 Port: 9              
+ 25 0 days 18:56:22          Link Up: Unit: 1 Slot: 1 Port: 12               
+ 26 0 days 18:56:20          Link Down: Unit: 1 Slot: 1 Port: 12             
+ 27 0 days 00:00:33          Link Up: Unit: 1 Slot: 1 Port: 15               
+ 28 0 days 00:00:32          Link Up: Unit: 1 Slot: 1 Port: 13               
+ 29 0 days 00:00:30          Link Down: Unit: 1 Slot: 1 Port: 15             
+ 30 0 days 00:00:29          Link Down: Unit: 1 Slot: 1 Port: 13             
+ 31 0 days 00:00:29          Link Up: Unit: 1 Slot: 1 Port: 9                
+ 32 0 days 00:00:26          hmPowerSupply:  Index: 1 State: ok              
+ 33 0 days 00:00:26          Spanning Tree Topology Change: Unit: 1 Slot: 1  
+                             Port: 4                                         
+
+--More-- or (q)uit
+
+
+
+Log System Up Time           Trap
+--- ------------------------ -------------------------------------------------
+ 34 0 days 00:00:26          New Spanning Tree Root: 0, Unit: 1              
+ 35 0 days 00:00:26          Link Up: Unit: 1 Slot: 1 Port: 10               
+ 36 0 days 00:00:26          Link Up: Unit: 1 Slot: 1 Port: 15               
+ 37 0 days 00:00:25          Link Up: Unit: 1 Slot: 1 Port: 13               
+ 38 0 days 00:00:25          Link Up: Unit: 1 Slot: 1 Port: 4                
+ 39 0 days 00:00:24          Link Up: Unit: 1 Slot: 1 Port: 11               
+ 40 0 days 00:00:24          Link Up: Unit: 1 Slot: 1 Port: 12               
+ 41 0 days 00:00:22          Cold Start: Unit: 0                             
+
+(Hirschmann MACH) #show logging snmp-requests 
+
+Log SNMP GET requests: enabled
+Log SNMP GET severity: notice
+Log SNMP SET requests: enabled
+Log SNMP SET severity: notice
+
+(Hirschmann MACH) #
+

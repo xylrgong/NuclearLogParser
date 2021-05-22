@@ -1,0 +1,49 @@
+import re
+import json
+
+
+
+'''
+with open('一层交换机日志.txt', 'r', encoding='utf-8') as f:
+    all_data = f.readlines()
+    line_num = len(all_data)
+    for i in range(0, line_num):
+        match_time = re.search(r"(\d{2}/\d{2}/\d{4})",all_data[i])
+        match_info = re.search(r"(\d{2}:\d{2}:\d{2}\.\d{2})", all_data[i])
+        print(match_time)
+        print(match_info)
+'''
+def log_passer(addr, pattr):   # receive an addr(str) and log pattern(list); return key info of log
+    with open(addr, 'r', encoding='utf-8') as f:
+        keys = list(pattr.keys())
+        values = list(pattr.values())
+        match = []
+        print(keys)
+        print(values)
+        all_data = f.readlines()
+        line_num = len(all_data)
+        for i in range(0, line_num):
+            match_n = []
+            for j in range(0, len(values)):
+                res = re.search(values[j], all_data[i])
+                match.append(res.group(2))
+                match_n.append(res.group(2))
+            dic = dict(zip(keys, match_n))
+            js = json.dumps(dic)
+            print(js)
+        print(match)
+    return
+
+
+def passer_handler():   # do the find job
+    return
+
+
+if __name__ == '__main__':
+    filename = 'LLDP.log'
+    lldp_pattr = {'time': '()(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+\d{2}:\d{2})', \
+                  'device': '()(SW\d{1})', \
+                  'OID': '(OID:) (\d(\.\d{1,4})*)', \
+                  'LldpStatsRemTablesInserts': '(LldpStatsRemTablesInserts=)(\d)'
+                  }
+    log_passer(filename, lldp_pattr)
