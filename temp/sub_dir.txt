@@ -1,0 +1,4 @@
+../LOG/TERMINAL/CCT/APPLOG\cct1exe
+../LOG/TERMINAL/CCT/APPLOG\cma_clientexe
+../LOG/TERMINAL/CCT/APPLOG\cma_serverexe
+../LOG/TERMINAL/CCT/APPLOG\srvprinterexe

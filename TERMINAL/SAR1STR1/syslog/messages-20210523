@@ -1,0 +1,1067 @@
+May 16 03:39:01 SAR1STR1 rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="1993" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+May 16 04:09:14 SAR1STR1 kernel: imklog 5.8.10, log source = /proc/kmsg started.
+May 16 04:09:14 SAR1STR1 rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="1993" x-info="http://www.rsyslog.com"] start
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys cpuset
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys cpu
+May 16 04:09:14 SAR1STR1 kernel: Linux version 2.6.32-504.el6.x86_64 (mockbuild@x86-023.build.eng.bos.redhat.com) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-11) (GCC) ) #1 SMP Tue Sep 16 01:56:35 EDT 2014
+May 16 04:09:14 SAR1STR1 kernel: Command line: ro root=UUID=75a46e99-6079-4e18-876d-ba166e4d9af7 rd_NO_LUKS  KEYBOARDTYPE=pc KEYTABLE=us LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto rd_NO_LVM rd_NO_DM rhgb quiet rhgb quiet
+May 16 04:09:14 SAR1STR1 kernel: KERNEL supported cpus:
+May 16 04:09:14 SAR1STR1 kernel:  Intel GenuineIntel
+May 16 04:09:14 SAR1STR1 kernel:  AMD AuthenticAMD
+May 16 04:09:14 SAR1STR1 kernel:  Centaur CentaurHauls
+May 16 04:09:14 SAR1STR1 kernel: BIOS-provided physical RAM map:
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 0000000000000000 - 000000000008e000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 000000000008e000 - 0000000000090000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 0000000000090000 - 00000000000a0000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000000f0000 - 0000000000100000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 0000000000100000 - 000000008b6b6000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 000000008b6b6000 - 000000008b6ba000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 000000008b6ba000 - 0000000094696000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 0000000094696000 - 000000009697a000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 000000009697a000 - 00000000a017a000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000a017a000 - 00000000a0e7a000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000a0e7a000 - 00000000a327a000 (ACPI NVS)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000a327a000 - 00000000a347a000 (ACPI data)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000a347a000 - 00000000a347b000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000a347b000 - 00000000a34fc000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000a34fc000 - 00000000b0000000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000b0000000 - 00000000d0000000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 00000000fe000000 - 00000000fe010000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 0000000100000000 - 000000083ffff000 (usable)
+May 16 04:09:14 SAR1STR1 kernel: BIOS-e820: 000000083ffff000 - 0000000840000000 (reserved)
+May 16 04:09:14 SAR1STR1 kernel: EFI v2.60 by HPE
+May 16 04:09:14 SAR1STR1 kernel: SMBIOS=0x9574b000  ACPI=0xa3479000  ACPI 2.0=0xa3479014 
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem00: type=7, attr=0xf, range=[0x0000000000000000-0x000000000008c000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem01: type=2, attr=0xf, range=[0x000000000008c000-0x000000000008e000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem02: type=0, attr=0xf, range=[0x000000000008e000-0x0000000000090000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem03: type=7, attr=0xf, range=[0x0000000000090000-0x00000000000a0000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem04: type=7, attr=0xf, range=[0x0000000000100000-0x0000000073500000) (1844MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem05: type=4, attr=0xf, range=[0x0000000073500000-0x0000000073600000) (1MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem06: type=7, attr=0xf, range=[0x0000000073600000-0x0000000073d00000) (7MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem07: type=4, attr=0xf, range=[0x0000000073d00000-0x0000000073d57000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem08: type=3, attr=0xf, range=[0x0000000073d57000-0x0000000073d58000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem09: type=4, attr=0xf, range=[0x0000000073d58000-0x000000007b0f0000) (115MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem10: type=7, attr=0xf, range=[0x000000007b0f0000-0x000000007e969000) (56MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem11: type=2, attr=0xf, range=[0x000000007e969000-0x0000000080000000) (22MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem12: type=7, attr=0xf, range=[0x0000000080000000-0x000000008a147000) (161MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem13: type=2, attr=0xf, range=[0x000000008a147000-0x000000008ae91000) (13MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem14: type=4, attr=0xf, range=[0x000000008ae91000-0x000000008b312000) (4MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem15: type=3, attr=0xf, range=[0x000000008b312000-0x000000008b6b6000) (3MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem16: type=6, attr=0x800000000000000f, range=[0x000000008b6b6000-0x000000008b6ba000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem17: type=3, attr=0xf, range=[0x000000008b6ba000-0x000000008c289000) (11MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem18: type=4, attr=0xf, range=[0x000000008c289000-0x000000009448a000) (130MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem19: type=3, attr=0xf, range=[0x000000009448a000-0x0000000094696000) (2MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem20: type=0, attr=0xf, range=[0x0000000094696000-0x0000000094726000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem21: type=6, attr=0x800000000000000f, range=[0x0000000094726000-0x0000000094733000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem22: type=0, attr=0xf, range=[0x0000000094733000-0x0000000095733000) (16MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem23: type=6, attr=0x800000000000000f, range=[0x0000000095733000-0x000000009697a000) (18MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem24: type=7, attr=0xf, range=[0x000000009697a000-0x0000000096df0000) (4MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem25: type=4, attr=0xf, range=[0x0000000096df0000-0x00000000975f2000) (8MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem26: type=7, attr=0xf, range=[0x00000000975f2000-0x0000000097732000) (1MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem27: type=4, attr=0xf, range=[0x0000000097732000-0x0000000097763000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem28: type=7, attr=0xf, range=[0x0000000097763000-0x00000000977a4000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem29: type=4, attr=0xf, range=[0x00000000977a4000-0x0000000097802000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem30: type=7, attr=0xf, range=[0x0000000097802000-0x0000000097817000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem31: type=4, attr=0xf, range=[0x0000000097817000-0x000000009788b000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem32: type=7, attr=0xf, range=[0x000000009788b000-0x000000009788d000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem33: type=4, attr=0xf, range=[0x000000009788d000-0x00000000978a0000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem34: type=7, attr=0xf, range=[0x00000000978a0000-0x00000000978a1000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem35: type=4, attr=0xf, range=[0x00000000978a1000-0x0000000097fea000) (7MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem36: type=7, attr=0xf, range=[0x0000000097fea000-0x0000000097fed000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem37: type=4, attr=0xf, range=[0x0000000097fed000-0x0000000098047000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem38: type=7, attr=0xf, range=[0x0000000098047000-0x0000000098049000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem39: type=4, attr=0xf, range=[0x0000000098049000-0x00000000988ff000) (8MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem40: type=7, attr=0xf, range=[0x00000000988ff000-0x0000000098902000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem41: type=4, attr=0xf, range=[0x0000000098902000-0x0000000098929000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem42: type=7, attr=0xf, range=[0x0000000098929000-0x000000009892b000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem43: type=4, attr=0xf, range=[0x000000009892b000-0x0000000098982000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem44: type=7, attr=0xf, range=[0x0000000098982000-0x0000000098986000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem45: type=4, attr=0xf, range=[0x0000000098986000-0x00000000996cb000) (13MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem46: type=7, attr=0xf, range=[0x00000000996cb000-0x00000000996cc000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem47: type=4, attr=0xf, range=[0x00000000996cc000-0x00000000996f4000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem48: type=7, attr=0xf, range=[0x00000000996f4000-0x00000000996f8000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem49: type=4, attr=0xf, range=[0x00000000996f8000-0x0000000099b7a000) (4MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem50: type=7, attr=0xf, range=[0x0000000099b7a000-0x0000000099b7c000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem51: type=4, attr=0xf, range=[0x0000000099b7c000-0x0000000099b7f000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem52: type=7, attr=0xf, range=[0x0000000099b7f000-0x0000000099b81000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem53: type=4, attr=0xf, range=[0x0000000099b81000-0x000000009a1b7000) (6MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem54: type=7, attr=0xf, range=[0x000000009a1b7000-0x000000009a1b9000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem55: type=4, attr=0xf, range=[0x000000009a1b9000-0x000000009e97a000) (71MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem56: type=2, attr=0xf, range=[0x000000009e97a000-0x000000009ead1000) (1MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem57: type=7, attr=0xf, range=[0x000000009ead1000-0x000000009eb1d000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem58: type=2, attr=0xf, range=[0x000000009eb1d000-0x000000009ed7a000) (2MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem59: type=7, attr=0xf, range=[0x000000009ed7a000-0x000000009f139000) (3MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem60: type=1, attr=0xf, range=[0x000000009f139000-0x000000009f17a000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem61: type=3, attr=0xf, range=[0x000000009f17a000-0x00000000a017a000) (16MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem62: type=6, attr=0x800000000000000f, range=[0x00000000a017a000-0x00000000a057a000) (4MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem63: type=5, attr=0x800000000000000f, range=[0x00000000a057a000-0x00000000a0d7a000) (8MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem64: type=0, attr=0xf, range=[0x00000000a0d7a000-0x00000000a0e7a000) (1MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem65: type=10, attr=0xf, range=[0x00000000a0e7a000-0x00000000a327a000) (36MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem66: type=9, attr=0xf, range=[0x00000000a327a000-0x00000000a347a000) (2MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem67: type=4, attr=0xf, range=[0x00000000a347a000-0x00000000a347b000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem68: type=6, attr=0x800000000000000f, range=[0x00000000a347b000-0x00000000a34fc000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem69: type=7, attr=0xf, range=[0x00000000a34fc000-0x00000000b0000000) (203MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem70: type=7, attr=0xf, range=[0x0000000100000000-0x000000083ffff000) (29695MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem71: type=0, attr=0x1001, range=[0x00000000000f0000-0x0000000000100000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem72: type=0, attr=0x8, range=[0x00000000b0000000-0x00000000c0000000) (256MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem73: type=11, attr=0x8000000000000001, range=[0x00000000c0000000-0x00000000d0000000) (256MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem74: type=11, attr=0x8000000000000001, range=[0x00000000fe000000-0x00000000fe010000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: EFI: mem75: type=0, attr=0x0, range=[0x000000083ffff000-0x0000000840000000) (0MB)
+May 16 04:09:14 SAR1STR1 kernel: DMI 3.2 present.
+May 16 04:09:14 SAR1STR1 kernel: SMBIOS version 3.2 @ 0x9574B000
+May 16 04:09:14 SAR1STR1 kernel: last_pfn = 0x83ffff max_arch_pfn = 0x400000000
+May 16 04:09:14 SAR1STR1 kernel: x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+May 16 04:09:14 SAR1STR1 kernel: x2apic enabled by BIOS, switching to x2apic ops
+May 16 04:09:14 SAR1STR1 kernel: last_pfn = 0xb0000 max_arch_pfn = 0x400000000
+May 16 04:09:14 SAR1STR1 kernel: Using GB pages for direct mapping
+May 16 04:09:14 SAR1STR1 kernel: init_memory_mapping: 0000000000000000-00000000b0000000
+May 16 04:09:14 SAR1STR1 kernel: init_memory_mapping: 0000000100000000-000000083ffff000
+May 16 04:09:14 SAR1STR1 kernel: RAMDISK: 7e969000 - 7fbfc055
+May 16 04:09:14 SAR1STR1 kernel: ACPI: RSDP 00000000a3479014 00024 (v02 HPE   )
+May 16 04:09:14 SAR1STR1 kernel: ACPI: XSDT 00000000a3463188 00114 (v01 HPE    Server   00000001      01000013)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: FACP 00000000a346d000 0010C (v06 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI Warning: FADT (revision 6) is longer than ACPI 2.0 version, truncating length 268 to 244 (20090903/tbfadt-288)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: DSDT 00000000a345d000 01D05 (v02 HPE    Server   00000002 HPE  00020000)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: FACS 00000000a2bfc000 00040
+May 16 04:09:14 SAR1STR1 kernel: ACPI: UEFI 00000000a3218000 00042 (v01 HPE    Server   00000002      01000013)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SSDT 00000000a3477000 007D5 (v02 HPE    ADDRXLAT 00000001 INTL 20140828)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCAT 00000000a3475000 00068 (v02 HPE    Server   00000002 INTL 20091013)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: MCEJ 00000000a3474000 00130 (v01 HPE    Server   00000002 INTL 20091013)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SSDT 00000000a3476000 0003A (v01 HPE    PLATOPRG 00000001 INTL 20140828)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: HEST 00000000a3473000 000E8 (v01 HPE    Server   00000001 INTL 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: BERT 00000000a3472000 00030 (v01 HPE    Server   00000001 INTL 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: ERST 00000000a3471000 00250 (v01 HPE    Server   00000001 INTL 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: EINJ 00000000a3470000 00170 (v01 HPE    Server   00000001 INTL 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: FPDT 00000000a346f000 00034 (v01 HPE    Server   00000002      01000013)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: BGRT 00000000a346e000 00038 (v01 HPE    Server   00000002 1590 01000013)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: HPET 00000000a346c000 00038 (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: WDDT 00000000a346b000 00040 (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: APIC 00000000a346a000 00124 (v03 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: MCFG 00000000a3469000 0003C (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SLIT 00000000a3468000 0002D (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SRAT 00000000a3467000 00110 (v03 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SPMI 00000000a3466000 00041 (v05 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: RASF 00000000a3465000 00030 (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SPCR 00000000a3464000 00050 (v02 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: MSCT 00000000a3478000 0004E (v02 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: BDAT 00000000a3462000 00030 (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: WSMT 00000000a3461000 00028 (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCCT 00000000a3460000 00030 (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: DMAR 00000000a345f000 00158 (v01 HPE    Server   00000001 1590 00000001)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SSDT 00000000a3459000 03CCC (v02 HPE    PCISSDT  00000002 HPE  00020000)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SSDT 00000000a3458000 001C4 (v02 HPE    TIMESSDT 00000002 HPE  00020000)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: SSDT 00000000a3457000 002F2 (v01 HPE        pmab 00000001 INTL 20140828)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: OEM1 00000000a3456000 00133 (v02 HPE    CPU  CPC 00000002 HPE  00020000)
+May 16 04:09:14 SAR1STR1 kernel: Setting APIC routing to cluster x2apic.
+May 16 04:09:14 SAR1STR1 kernel: SRAT: PXM 0 -> APIC 0 -> Node 0
+May 16 04:09:14 SAR1STR1 kernel: SRAT: PXM 0 -> APIC 12 -> Node 0
+May 16 04:09:14 SAR1STR1 kernel: SRAT: PXM 0 -> APIC 18 -> Node 0
+May 16 04:09:14 SAR1STR1 kernel: SRAT: PXM 0 -> APIC 20 -> Node 0
+May 16 04:09:14 SAR1STR1 kernel: SRAT: PXM 0 -> APIC 22 -> Node 0
+May 16 04:09:14 SAR1STR1 kernel: SRAT: PXM 0 -> APIC 26 -> Node 0
+May 16 04:09:14 SAR1STR1 kernel: SRAT: Node 0 PXM 0 0-c0000000
+May 16 04:09:14 SAR1STR1 kernel: SRAT: Node 0 PXM 0 100000000-840000000
+May 16 04:09:14 SAR1STR1 kernel: Bootmem setup node 0 0000000000000000-000000083ffff000
+May 16 04:09:14 SAR1STR1 kernel:  NODE_DATA [000000000000b000 - 000000000003efff]
+May 16 04:09:14 SAR1STR1 kernel:  bootmap [0000000000100000 -  0000000000207fff] pages 108
+May 16 04:09:14 SAR1STR1 kernel: (10 early reservations) ==> bootmem [0000000000 - 083ffff000]
+May 16 04:09:14 SAR1STR1 kernel:  #0 [0000000000 - 0000001000]   BIOS data page ==> [0000000000 - 0000001000]
+May 16 04:09:14 SAR1STR1 kernel:  #1 [0000006000 - 0000008000]       TRAMPOLINE ==> [0000006000 - 0000008000]
+May 16 04:09:14 SAR1STR1 kernel:  #2 [0001000000 - 000202bbe4]    TEXT DATA BSS ==> [0001000000 - 000202bbe4]
+May 16 04:09:14 SAR1STR1 kernel:  #3 [007e969000 - 007fbfc055]          RAMDISK ==> [007e969000 - 007fbfc055]
+May 16 04:09:14 SAR1STR1 kernel:  #4 [000009f000 - 0000100000]    BIOS reserved ==> [000009f000 - 0000100000]
+May 16 04:09:14 SAR1STR1 kernel:  #5 [007fffd000 - 007fffde40]       EFI memmap ==> [007fffd000 - 007fffde40]
+May 16 04:09:14 SAR1STR1 kernel:  #6 [000202c000 - 000202ca0d]              BRK ==> [000202c000 - 000202ca0d]
+May 16 04:09:14 SAR1STR1 kernel:  #7 [0000008000 - 0000009000]          PGTABLE ==> [0000008000 - 0000009000]
+May 16 04:09:14 SAR1STR1 kernel:  #8 [0000009000 - 000000b000]          PGTABLE ==> [0000009000 - 000000b000]
+May 16 04:09:14 SAR1STR1 kernel:  #9 [0000001000 - 000000102d]        ACPI SLIT ==> [0000001000 - 000000102d]
+May 16 04:09:14 SAR1STR1 kernel: Reserving 131MB of memory at 48MB for crashkernel (System RAM: 33791MB)
+May 16 04:09:14 SAR1STR1 kernel: Zone PFN ranges:
+May 16 04:09:14 SAR1STR1 kernel:  DMA      0x00000001 -> 0x00001000
+May 16 04:09:14 SAR1STR1 kernel:  DMA32    0x00001000 -> 0x00100000
+May 16 04:09:14 SAR1STR1 kernel:  Normal   0x00100000 -> 0x0083ffff
+May 16 04:09:14 SAR1STR1 kernel: Movable zone start PFN for each node
+May 16 04:09:14 SAR1STR1 kernel: early_node_map[8] active PFN ranges
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x00000001 -> 0x0000008e
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x00000090 -> 0x000000a0
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x00000100 -> 0x0008b6b6
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x0008b6ba -> 0x00094696
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x0009697a -> 0x000a017a
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x000a347a -> 0x000a347b
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x000a34fc -> 0x000b0000
+May 16 04:09:14 SAR1STR1 kernel:    0: 0x00100000 -> 0x0083ffff
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PM-Timer IO Port: 0x508
+May 16 04:09:14 SAR1STR1 kernel: Setting APIC routing to cluster x2apic.
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC (apic_id[0x00] uid[0x00] enabled)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC (apic_id[0x0c] uid[0x0c] enabled)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC (apic_id[0x12] uid[0x12] enabled)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC (apic_id[0x14] uid[0x14] enabled)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC (apic_id[0x16] uid[0x16] enabled)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC (apic_id[0x1a] uid[0x1a] enabled)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC_NMI (uid[0x00] high level lint[0x1])
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC_NMI (uid[0x0c] high level lint[0x1])
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC_NMI (uid[0x12] high level lint[0x1])
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC_NMI (uid[0x14] high level lint[0x1])
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC_NMI (uid[0x16] high level lint[0x1])
+May 16 04:09:14 SAR1STR1 kernel: ACPI: X2APIC_NMI (uid[0x1a] high level lint[0x1])
+May 16 04:09:14 SAR1STR1 kernel: ACPI: IOAPIC (id[0x08] address[0xfec00000] gsi_base[0])
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC[0]: apic_id 8, version 32, address 0xfec00000, GSI 0-23
+May 16 04:09:14 SAR1STR1 kernel: ACPI: IOAPIC (id[0x09] address[0xfec01000] gsi_base[24])
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC[1]: apic_id 9, version 32, address 0xfec01000, GSI 24-31
+May 16 04:09:14 SAR1STR1 kernel: ACPI: IOAPIC (id[0x0a] address[0xfec08000] gsi_base[32])
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC[2]: apic_id 10, version 32, address 0xfec08000, GSI 32-39
+May 16 04:09:14 SAR1STR1 kernel: ACPI: IOAPIC (id[0x0b] address[0xfec10000] gsi_base[40])
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC[3]: apic_id 11, version 32, address 0xfec10000, GSI 40-47
+May 16 04:09:14 SAR1STR1 kernel: ACPI: IOAPIC (id[0x0c] address[0xfec18000] gsi_base[48])
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC[4]: apic_id 12, version 32, address 0xfec18000, GSI 48-55
+May 16 04:09:14 SAR1STR1 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+May 16 04:09:14 SAR1STR1 kernel: Using ACPI (MADT) for SMP configuration information
+May 16 04:09:14 SAR1STR1 kernel: ACPI: HPET id: 0x8086a701 base: 0xfed00000
+May 16 04:09:14 SAR1STR1 kernel: SMP: Allowing 6 CPUs, 0 hotplug CPUs
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 000000000008e000 - 0000000000090000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000000a0000 - 00000000000f0000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000000f0000 - 0000000000100000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 000000008b6b6000 - 000000008b6ba000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 0000000094696000 - 000000009697a000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000a017a000 - 00000000a0e7a000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000a0e7a000 - 00000000a327a000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000a327a000 - 00000000a347a000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000a347b000 - 00000000a34fc000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000b0000000 - 00000000d0000000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000d0000000 - 00000000fe000000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000fe000000 - 00000000fe010000
+May 16 04:09:14 SAR1STR1 kernel: PM: Registered nosave memory: 00000000fe010000 - 0000000100000000
+May 16 04:09:14 SAR1STR1 kernel: Allocating PCI resources starting at d0000000 (gap: d0000000:2e000000)
+May 16 04:09:14 SAR1STR1 kernel: Booting paravirtualized kernel on bare hardware
+May 16 04:09:14 SAR1STR1 kernel: Detected CPU family 6 model 85
+May 16 04:09:14 SAR1STR1 kernel: UNSUPPORTED HARDWARE DEVICE: Intel CPU model
+May 16 04:09:14 SAR1STR1 kernel: ------------[ cut here ]------------
+May 16 04:09:14 SAR1STR1 kernel: WARNING: at kernel/rh_taint.c:13 mark_hardware_unsupported+0x34/0x40() (Not tainted)
+May 16 04:09:14 SAR1STR1 kernel: Hardware name: ProLiant DL380 Gen10
+May 16 04:09:14 SAR1STR1 kernel: Your hardware is unsupported.  Please do not report bugs, panics, oopses, etc., on this hardware.
+May 16 04:09:14 SAR1STR1 kernel: Modules linked in:
+May 16 04:09:14 SAR1STR1 kernel: Pid: 0, comm: swapper Not tainted 2.6.32-504.el6.x86_64 #1
+May 16 04:09:14 SAR1STR1 kernel: Call Trace:
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81074df7>] ? warn_slowpath_common+0x87/0xc0
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81074ee6>] ? warn_slowpath_fmt+0x46/0x50
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff810a7b04>] ? mark_hardware_unsupported+0x34/0x40
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81c30ba0>] ? setup_arch+0xc46/0xc69
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff815293c5>] ? printk+0x41/0x44
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81c2ac47>] ? start_kernel+0xdc/0x430
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81c2a33a>] ? x86_64_start_reservations+0x125/0x129
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81c2a453>] ? x86_64_start_kernel+0x115/0x124
+May 16 04:09:14 SAR1STR1 kernel: ---[ end trace a7919e7f17c0a725 ]---
+May 16 04:09:14 SAR1STR1 kernel: NR_CPUS:4096 nr_cpumask_bits:6 nr_cpu_ids:6 nr_node_ids:1
+May 16 04:09:14 SAR1STR1 kernel: PERCPU: Embedded 31 pages/cpu @ffff880028200000 s95064 r8192 d23720 u262144
+May 16 04:09:14 SAR1STR1 kernel: pcpu-alloc: s95064 r8192 d23720 u262144 alloc=1*2097152
+May 16 04:09:14 SAR1STR1 kernel: pcpu-alloc: [0] 0 1 2 3 4 5 - - 
+May 16 04:09:14 SAR1STR1 kernel: Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8182476
+May 16 04:09:14 SAR1STR1 kernel: Policy zone: Normal
+May 16 04:09:14 SAR1STR1 kernel: Kernel command line: ro root=UUID=75a46e99-6079-4e18-876d-ba166e4d9af7 rd_NO_LUKS  KEYBOARDTYPE=pc KEYTABLE=us LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=131M@0M rd_NO_LVM rd_NO_DM rhgb quiet rhgb quiet
+May 16 04:09:14 SAR1STR1 kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+May 16 04:09:14 SAR1STR1 kernel: xsave/xrstor: enabled xstate_bv 0xe7, cntxt size 0xa80
+May 16 04:09:14 SAR1STR1 kernel: Checking aperture...
+May 16 04:09:14 SAR1STR1 kernel: No AGP bridge found
+May 16 04:09:14 SAR1STR1 kernel: dmar: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+May 16 04:09:14 SAR1STR1 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+May 16 04:09:14 SAR1STR1 kernel: Placing 64MB software IO TLB between ffff880020000000 - ffff880024000000
+May 16 04:09:14 SAR1STR1 kernel: software IO TLB at phys 0x20000000 - 0x24000000
+May 16 04:09:14 SAR1STR1 kernel: Memory: 32093076k/34603004k available (5336k kernel code, 1399600k absent, 1110328k reserved, 7016k data, 1296k init)
+May 16 04:09:14 SAR1STR1 kernel: Hierarchical RCU implementation.
+May 16 04:09:14 SAR1STR1 kernel: NR_IRQS:33024 nr_irqs:1000
+May 16 04:09:14 SAR1STR1 kernel: Extended CMOS year: 2000
+May 16 04:09:14 SAR1STR1 kernel: Console: colour dummy device 80x25
+May 16 04:09:14 SAR1STR1 kernel: console [tty0] enabled
+May 16 04:09:14 SAR1STR1 kernel: allocated 133169152 bytes of page_cgroup
+May 16 04:09:14 SAR1STR1 kernel: please try 'cgroup_disable=memory' option if you don't want memory cgroups
+May 16 04:09:14 SAR1STR1 kernel: Fast TSC calibration failed
+May 16 04:09:14 SAR1STR1 kernel: TSC: PIT calibration matches HPET. 1 loops
+May 16 04:09:14 SAR1STR1 kernel: Detected 3392.041 MHz processor.
+May 16 04:09:14 SAR1STR1 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 6784.08 BogoMIPS (lpj=3392041)
+May 16 04:09:14 SAR1STR1 kernel: pid_max: default: 32768 minimum: 301
+May 16 04:09:14 SAR1STR1 kernel: Security Framework initialized
+May 16 04:09:14 SAR1STR1 kernel: SELinux:  Initializing.
+May 16 04:09:14 SAR1STR1 kernel: Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes)
+May 16 04:09:14 SAR1STR1 kernel: Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+May 16 04:09:14 SAR1STR1 kernel: Mount-cache hash table entries: 256
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys ns
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys cpuacct
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys memory
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys devices
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys freezer
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys net_cls
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys blkio
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys perf_event
+May 16 04:09:14 SAR1STR1 kernel: Initializing cgroup subsys net_prio
+May 16 04:09:14 SAR1STR1 kernel: CPU: Physical Processor ID: 0
+May 16 04:09:14 SAR1STR1 kernel: CPU: Processor Core ID: 0
+May 16 04:09:14 SAR1STR1 kernel: mce: CPU supports 20 MCE banks
+May 16 04:09:14 SAR1STR1 kernel: CPU0: Thermal monitoring enabled (TM1)
+May 16 04:09:14 SAR1STR1 kernel: using mwait in idle threads.
+May 16 04:09:14 SAR1STR1 kernel: ACPI: Core revision 20090903
+May 16 04:09:14 SAR1STR1 kernel: ftrace: converting mcount calls to 0f 1f 44 00 00
+May 16 04:09:14 SAR1STR1 kernel: ftrace: allocating 21917 entries in 86 pages
+May 16 04:09:14 SAR1STR1 kernel: dmar: Host address width 46
+May 16 04:09:14 SAR1STR1 kernel: dmar: DRHD base: 0x000000eaffc000 flags: 0x0
+May 16 04:09:14 SAR1STR1 kernel: dmar: IOMMU 0: reg_base_addr eaffc000 ver 1:0 cap 8d2078c106f0466 ecap f020df
+May 16 04:09:14 SAR1STR1 kernel: dmar: DRHD base: 0x000000f37fc000 flags: 0x0
+May 16 04:09:14 SAR1STR1 kernel: dmar: IOMMU 1: reg_base_addr f37fc000 ver 1:0 cap 8d2078c106f0466 ecap f020df
+May 16 04:09:14 SAR1STR1 kernel: dmar: DRHD base: 0x000000fbffc000 flags: 0x0
+May 16 04:09:14 SAR1STR1 kernel: dmar: IOMMU 2: reg_base_addr fbffc000 ver 1:0 cap 8d2078c106f0466 ecap f020df
+May 16 04:09:14 SAR1STR1 kernel: dmar: DRHD base: 0x000000e27fc000 flags: 0x1
+May 16 04:09:14 SAR1STR1 kernel: dmar: IOMMU 3: reg_base_addr e27fc000 ver 1:0 cap 8d2078c106f0466 ecap f020df
+May 16 04:09:14 SAR1STR1 kernel: dmar: RMRR base: 0x000000a2bf8000 end: 0x000000a2bfafff
+May 16 04:09:14 SAR1STR1 kernel: dmar: RMRR base: 0x000000a0dd9000 end: 0x000000a0dd9fff
+May 16 04:09:14 SAR1STR1 kernel: dmar: ATSR flags: 0x0
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC id 12 under DRHD base 0xfbffc000
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC id 11 under DRHD base 0xf37fc000
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC id 10 under DRHD base 0xeaffc000
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC id 8 under DRHD base 0xe27fc000
+May 16 04:09:14 SAR1STR1 kernel: IOAPIC id 9 under DRHD base 0xe27fc000
+May 16 04:09:14 SAR1STR1 kernel: HPET id 0 under DRHD base 0xe27fc000
+May 16 04:09:14 SAR1STR1 kernel: Enabled IRQ remapping in x2apic mode
+May 16 04:09:14 SAR1STR1 kernel: APIC routing finalized to cluster x2apic.
+May 16 04:09:14 SAR1STR1 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+May 16 04:09:14 SAR1STR1 kernel: CPU0: Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz stepping 04
+May 16 04:09:14 SAR1STR1 kernel: Performance Events: no PEBS fmt3+, generic architected perfmon, full-width counters, Intel PMU driver.
+May 16 04:09:14 SAR1STR1 kernel: ... version:                4
+May 16 04:09:14 SAR1STR1 kernel: ... bit width:              48
+May 16 04:09:14 SAR1STR1 kernel: ... generic registers:      8
+May 16 04:09:14 SAR1STR1 kernel: ... value mask:             0000ffffffffffff
+May 16 04:09:14 SAR1STR1 kernel: ... max period:             0000ffffffffffff
+May 16 04:09:14 SAR1STR1 kernel: ... fixed-purpose events:   3
+May 16 04:09:14 SAR1STR1 kernel: ... event mask:             00000007000000ff
+May 16 04:09:14 SAR1STR1 kernel: NMI watchdog enabled, takes one hw-pmu counter.
+May 16 04:09:14 SAR1STR1 kernel: Booting Node   0, Processors  #1 #2 #3 #4 #5 Ok.
+May 16 04:09:14 SAR1STR1 kernel: Brought up 6 CPUs
+May 16 04:09:14 SAR1STR1 kernel: Total of 6 processors activated (40704.49 BogoMIPS).
+May 16 04:09:14 SAR1STR1 kernel: devtmpfs: initialized
+May 16 04:09:14 SAR1STR1 kernel: PM: Registering ACPI NVS region at a0e7a000 (37748736 bytes)
+May 16 04:09:14 SAR1STR1 kernel: regulator: core version 0.5
+May 16 04:09:14 SAR1STR1 kernel: NET: Registered protocol family 16
+May 16 04:09:14 SAR1STR1 kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+May 16 04:09:14 SAR1STR1 kernel: ACPI: bus type pci registered
+May 16 04:09:14 SAR1STR1 kernel: PCI: MCFG configuration 0: base c0000000 segment 0 buses 0 - 255
+May 16 04:09:14 SAR1STR1 kernel: PCI: MCFG area at c0000000 reserved in E820
+May 16 04:09:14 SAR1STR1 kernel: PCI: Using MMCONFIG at c0000000 - cfffffff
+May 16 04:09:14 SAR1STR1 kernel: PCI: Using configuration type 1 for base access
+May 16 04:09:14 SAR1STR1 kernel: PCI: HP ProLiant DL380 detected, enabling pci=bfsort.
+May 16 04:09:14 SAR1STR1 kernel: bio: create slab <bio-0> at 0
+May 16 04:09:14 SAR1STR1 kernel: ACPI: Interpreter enabled
+May 16 04:09:14 SAR1STR1 kernel: ACPI: (supports S0 S5)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: BIOS offers _GTS
+May 16 04:09:14 SAR1STR1 kernel: ACPI: If "acpi.gts=1" improves suspend, please notify linux-acpi@vger.kernel.org
+May 16 04:09:14 SAR1STR1 kernel: ACPI: Using IOAPIC for interrupt routing
+May 16 04:09:14 SAR1STR1 kernel: ACPI: No dock devices found.
+May 16 04:09:14 SAR1STR1 kernel: HEST: Table parsing has been initialized.
+May 16 04:09:14 SAR1STR1 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-0f])
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [mem 0x000c4000-0x000cbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [io  0x0000-0x03af]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [io  0x03e0-0x0cf7]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [io  0x03b0-0x03bb]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [io  0x03c0-0x03df]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [mem 0x000a0000-0x000bffff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [io  0x1000-0x3fff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [mem 0xd0000000-0xe27fbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:00: host bridge window [mem 0xc0000000000-0xc3fffffffff]
+May 16 04:09:14 SAR1STR1 kernel: PCI host bridge to bus 0000:00
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000cbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x03af]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [io  0x03e0-0x0cf7]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [io  0x03b0-0x03bb]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [io  0x03c0-0x03df]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [io  0x1000-0x3fff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [mem 0xd0000000-0xe27fbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000000-0xc3fffffffff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:11.5: PME# supported from D3hot
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:11.5: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:14.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:16.0: PME# supported from D3hot
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:16.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:16.4: PME# supported from D3hot
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:16.4: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.0: PCI bridge to [bus 02-02]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:01:00.2: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:01:00.2: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4: PCI bridge to [bus 01-01]
+May 16 04:09:14 SAR1STR1 kernel: pci0000:00: Requesting ACPI _OSC control (0x1d)
+May 16 04:09:14 SAR1STR1 kernel: pci0000:00: ACPI _OSC control (0x15) granted
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Root Bridge [PC01] (domain 0000 [bus 10-5f])
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:01: host bridge window [io  0x4000-0x7fff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:01: host bridge window [mem 0xe2800000-0xeaffbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:01: host bridge window [mem 0xc4000000000-0xc7fffffffff]
+May 16 04:09:14 SAR1STR1 kernel: PCI host bridge to bus 0000:10
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:10: root bus resource [io  0x4000-0x7fff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:10: root bus resource [mem 0xe2800000-0xeaffbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:10: root bus resource [mem 0xc4000000000-0xc7fffffffff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:00.0: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:00.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:02.0: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:02.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:00.0: PCI bridge to [bus 11-11]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:02.0: PCI bridge to [bus 12-12]
+May 16 04:09:14 SAR1STR1 kernel: pci0000:10: Requesting ACPI _OSC control (0x1d)
+May 16 04:09:14 SAR1STR1 kernel: pci0000:10: ACPI _OSC control (0x15) granted
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Root Bridge [PC02] (domain 0000 [bus 60-af])
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:02: host bridge window [io  0x8000-0xbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:02: host bridge window [mem 0xeb000000-0xf37fbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:02: host bridge window [mem 0xc8000000000-0xcbfffffffff]
+May 16 04:09:14 SAR1STR1 kernel: PCI host bridge to bus 0000:60
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:60: root bus resource [io  0x8000-0xbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:60: root bus resource [mem 0xeb000000-0xf37fbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:60: root bus resource [mem 0xc8000000000-0xcbfffffffff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:60:00.0: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:60:00.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:60:00.0: PCI bridge to [bus 61-61]
+May 16 04:09:14 SAR1STR1 kernel: pci0000:60: Requesting ACPI _OSC control (0x1d)
+May 16 04:09:14 SAR1STR1 kernel: pci0000:60: ACPI _OSC control (0x15) granted
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Root Bridge [PC03] (domain 0000 [bus b0-ff])
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:03: host bridge window [io  0xc000-0xffff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:03: host bridge window [mem 0xf3800000-0xfbffbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_root PNP0A08:03: host bridge window [mem 0xcc000000000-0xcffffffffff]
+May 16 04:09:14 SAR1STR1 kernel: PCI host bridge to bus 0000:b0
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:b0: root bus resource [io  0xc000-0xffff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:b0: root bus resource [mem 0xf3800000-0xfbffbfff]
+May 16 04:09:14 SAR1STR1 kernel: pci_bus 0000:b0: root bus resource [mem 0xcc000000000-0xcffffffffff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:02.0: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:02.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b1:00.0: PME# supported from D0 D1 D3hot
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b1:00.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0: PCI bridge to [bus b1-b1]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.0: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.0: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.1: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.1: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.2: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.2: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.3: PME# supported from D0 D3hot D3cold
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.3: PME# disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:02.0: PCI bridge to [bus b2-b2]
+May 16 04:09:14 SAR1STR1 kernel: pci0000:b0: Requesting ACPI _OSC control (0x1d)
+May 16 04:09:14 SAR1STR1 kernel: pci0000:b0: ACPI _OSC control (0x15) granted
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 *10 11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 10 *11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 *11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 *11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+May 16 04:09:14 SAR1STR1 kernel: vgaarb: device added: PCI:0000:01:00.1,decodes=io+mem,owns=io+mem,locks=none
+May 16 04:09:14 SAR1STR1 kernel: vgaarb: loaded
+May 16 04:09:14 SAR1STR1 kernel: vgaarb: bridge control possible 0000:01:00.1
+May 16 04:09:14 SAR1STR1 kernel: SCSI subsystem initialized
+May 16 04:09:14 SAR1STR1 kernel: usbcore: registered new interface driver usbfs
+May 16 04:09:14 SAR1STR1 kernel: usbcore: registered new interface driver hub
+May 16 04:09:14 SAR1STR1 kernel: usbcore: registered new device driver usb
+May 16 04:09:14 SAR1STR1 kernel: PCI: Using ACPI for IRQ routing
+May 16 04:09:14 SAR1STR1 kernel: NetLabel: Initializing
+May 16 04:09:14 SAR1STR1 kernel: NetLabel:  domain hash size = 128
+May 16 04:09:14 SAR1STR1 kernel: NetLabel:  protocols = UNLABELED CIPSOv4
+May 16 04:09:14 SAR1STR1 kernel: NetLabel:  unlabeled traffic allowed by default
+May 16 04:09:14 SAR1STR1 kernel: HPET: 8 timers in total, 5 timers will be used for per-cpu timer
+May 16 04:09:14 SAR1STR1 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 60, 61, 62, 63, 64, 0
+May 16 04:09:14 SAR1STR1 kernel: hpet0: 8 comparators, 64-bit 24.000000 MHz counter
+May 16 04:09:14 SAR1STR1 kernel: Switching to clocksource hpet
+May 16 04:09:14 SAR1STR1 kernel: pnp: PnP ACPI init
+May 16 04:09:14 SAR1STR1 kernel: ACPI: bus type pnp registered
+May 16 04:09:14 SAR1STR1 kernel: pnp: PnP ACPI: found 14 devices
+May 16 04:09:14 SAR1STR1 kernel: ACPI: ACPI bus type pnp unregistered
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [io  0x0500-0x053f] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [io  0x0400-0x047f] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [io  0x0540-0x057f] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [io  0x0600-0x061f] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [io  0x0880-0x0883] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [io  0x0800-0x081f] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [mem 0xfed1c000-0xfed3ffff] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [mem 0xfed45000-0xfed8bfff] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [mem 0xff000000-0xffffffff] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [mem 0xfee00000-0xfeefffff] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [mem 0xfed12000-0xfed1200f] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [mem 0xfed12010-0xfed1201f] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: system 00:07: [mem 0xfed1b000-0xfed1bfff] has been reserved
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4: BAR 15: assigned [mem 0xd9c00000-0xd9cfffff pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.0: PCI bridge to [bus 02-02]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:01:00.2: BAR 6: assigned [mem 0xd9c00000-0xd9c0ffff pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4: PCI bridge to [bus 01-01]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4:   bridge window [io  0x1000-0x1fff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4:   bridge window [mem 0xd0000000-0xd9bfffff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4:   bridge window [mem 0xd9c00000-0xd9cfffff pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:00.0: PCI bridge to [bus 11-11]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:02.0: PCI bridge to [bus 12-12]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:60:00.0: PCI bridge to [bus 61-61]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0: BAR 15: assigned [mem 0xf4000000-0xf41fffff pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b1:00.0: BAR 6: assigned [mem 0xf4000000-0xf41fffff pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0: PCI bridge to [bus b1-b1]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0:   bridge window [io  0xc000-0xcfff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0:   bridge window [mem 0xf3d00000-0xf3dfffff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0:   bridge window [mem 0xf4000000-0xf41fffff pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.0: BAR 6: assigned [mem 0xf3c80000-0xf3cfffff pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.1: BAR 6: can't assign mem pref (size 0x80000)
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.2: BAR 6: can't assign mem pref (size 0x80000)
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b2:00.3: BAR 6: can't assign mem pref (size 0x80000)
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:02.0: PCI bridge to [bus b2-b2]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:02.0:   bridge window [mem 0xf3800000-0xf3cfffff]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:02.0:   bridge window [mem 0xcfffff00000-0xcffffffffff 64bit pref]
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:1c.4: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:00.0: PCI INT A -> GSI 32 (level, low) -> IRQ 32
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:10:02.0: PCI INT A -> GSI 34 (level, low) -> IRQ 34
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:60:00.0: PCI INT A -> GSI 40 (level, low) -> IRQ 40
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:00.0: PCI INT A -> GSI 48 (level, low) -> IRQ 48
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:b0:02.0: PCI INT A -> GSI 50 (level, low) -> IRQ 50
+May 16 04:09:14 SAR1STR1 kernel: NET: Registered protocol family 2
+May 16 04:09:14 SAR1STR1 kernel: IP route cache hash table entries: 524288 (order: 10, 4194304 bytes)
+May 16 04:09:14 SAR1STR1 kernel: TCP established hash table entries: 524288 (order: 11, 8388608 bytes)
+May 16 04:09:14 SAR1STR1 kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+May 16 04:09:14 SAR1STR1 kernel: TCP: Hash tables configured (established 524288 bind 65536)
+May 16 04:09:14 SAR1STR1 kernel: TCP reno registered
+May 16 04:09:14 SAR1STR1 kernel: NET: Registered protocol family 1
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:14.0: power state changed by ACPI to D0
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:14.0: power state changed by ACPI to D0
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:14.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:00:14.0: PCI INT A disabled
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:01:00.4: PCI INT B -> GSI 17 (level, low) -> IRQ 17
+May 16 04:09:14 SAR1STR1 kernel: pci 0000:01:00.4: PCI INT B disabled
+May 16 04:09:14 SAR1STR1 kernel: Trying to unpack rootfs image as initramfs...
+May 16 04:09:14 SAR1STR1 kernel: Freeing initrd memory: 19020k freed
+May 16 04:09:14 SAR1STR1 kernel: futex hash table entries: 2048 (order: 5, 131072 bytes)
+May 16 04:09:14 SAR1STR1 kernel: audit: initializing netlink socket (disabled)
+May 16 04:09:14 SAR1STR1 kernel: type=2000 audit(1621109339.441:1): initialized
+May 16 04:09:14 SAR1STR1 kernel: HugeTLB registered 2 MB page size, pre-allocated 0 pages
+May 16 04:09:14 SAR1STR1 kernel: VFS: Disk quotas dquot_6.5.2
+May 16 04:09:14 SAR1STR1 kernel: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May 16 04:09:14 SAR1STR1 kernel: msgmni has been set to 32768
+May 16 04:09:14 SAR1STR1 kernel: alg: No test for stdrng (krng)
+May 16 04:09:14 SAR1STR1 kernel: ksign: Installing public key data
+May 16 04:09:14 SAR1STR1 kernel: Loading keyring
+May 16 04:09:14 SAR1STR1 kernel: - Added public key 26DA0274AC913FEF
+May 16 04:09:14 SAR1STR1 kernel: - User ID: Red Hat, Inc. (Kernel Module GPG key)
+May 16 04:09:14 SAR1STR1 kernel: - Added public key D4A26C9CCD09BEDA
+May 16 04:09:14 SAR1STR1 kernel: - User ID: Red Hat Enterprise Linux Driver Update Program <secalert@redhat.com>
+May 16 04:09:14 SAR1STR1 kernel: - Added public key CB445E0DA3EA1F65
+May 16 04:09:14 SAR1STR1 kernel: - User ID: Red Hat Enterprise Linux Driver Update Program (key 4) <secalert@redhat.com>
+May 16 04:09:14 SAR1STR1 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+May 16 04:09:14 SAR1STR1 kernel: io scheduler noop registered
+May 16 04:09:14 SAR1STR1 kernel: io scheduler anticipatory registered
+May 16 04:09:14 SAR1STR1 kernel: io scheduler deadline registered
+May 16 04:09:14 SAR1STR1 kernel: io scheduler cfq registered (default)
+May 16 04:09:14 SAR1STR1 kernel: pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+May 16 04:09:14 SAR1STR1 kernel: pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+May 16 04:09:14 SAR1STR1 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+May 16 04:09:14 SAR1STR1 kernel: efifb: probing for efifb
+May 16 04:09:14 SAR1STR1 kernel: efifb: framebuffer at 0xd8000000, mapped to 0xffffc90023e80000, using 3072k, total 3072k
+May 16 04:09:14 SAR1STR1 kernel: efifb: mode is 1024x768x32, linelength=4096, pages=1
+May 16 04:09:14 SAR1STR1 kernel: efifb: scrolling: redraw
+May 16 04:09:14 SAR1STR1 kernel: efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+May 16 04:09:14 SAR1STR1 kernel: Console: switching to colour frame buffer device 128x48
+May 16 04:09:14 SAR1STR1 kernel: fb0: EFI VGA frame buffer device
+May 16 04:09:14 SAR1STR1 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+May 16 04:09:14 SAR1STR1 kernel: ACPI: Power Button [PWRF]
+May 16 04:09:14 SAR1STR1 kernel: [Firmware Bug]: No valid trip found
+May 16 04:09:14 SAR1STR1 kernel: ERST: Error Record Serialization Table (ERST) support is initialized.
+May 16 04:09:14 SAR1STR1 kernel: GHES: APEI firmware first mode is enabled by APEI bit and WHEA _OSC.
+May 16 04:09:14 SAR1STR1 kernel: Non-volatile memory driver v1.3
+May 16 04:09:14 SAR1STR1 kernel: Linux agpgart interface v0.103
+May 16 04:09:14 SAR1STR1 kernel: crash memory driver: version 1.1
+May 16 04:09:14 SAR1STR1 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+May 16 04:09:14 SAR1STR1 kernel: serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+May 16 04:09:14 SAR1STR1 kernel: serial8250: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+May 16 04:09:14 SAR1STR1 kernel: 00:09: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+May 16 04:09:14 SAR1STR1 kernel: 00:0a: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+May 16 04:09:14 SAR1STR1 kernel: brd: module loaded
+May 16 04:09:14 SAR1STR1 kernel: loop: module loaded
+May 16 04:09:14 SAR1STR1 kernel: input: Macintosh mouse button emulation as /devices/virtual/input/input1
+May 16 04:09:14 SAR1STR1 kernel: Fixed MDIO Bus: probed
+May 16 04:09:14 SAR1STR1 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+May 16 04:09:14 SAR1STR1 kernel: ehci_hcd 0000:01:00.4: PCI INT B -> GSI 17 (level, low) -> IRQ 17
+May 16 04:09:14 SAR1STR1 kernel: ehci_hcd 0000:01:00.4: EHCI Host Controller
+May 16 04:09:14 SAR1STR1 kernel: ehci_hcd 0000:01:00.4: new USB bus registered, assigned bus number 1
+May 16 04:09:14 SAR1STR1 kernel: ehci_hcd 0000:01:00.4: Enabling legacy PCI PM
+May 16 04:09:14 SAR1STR1 kernel: ehci_hcd 0000:01:00.4: irq 17, io mem 0xd9b9c000
+May 16 04:09:14 SAR1STR1 kernel: ehci_hcd 0000:01:00.4: USB 2.0 started, EHCI 1.00
+May 16 04:09:14 SAR1STR1 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+May 16 04:09:14 SAR1STR1 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 16 04:09:14 SAR1STR1 kernel: usb usb1: Product: EHCI Host Controller
+May 16 04:09:14 SAR1STR1 kernel: usb usb1: Manufacturer: Linux 2.6.32-504.el6.x86_64 ehci_hcd
+May 16 04:09:14 SAR1STR1 kernel: usb usb1: SerialNumber: 0000:01:00.4
+May 16 04:09:14 SAR1STR1 kernel: usb usb1: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: hub 1-0:1.0: USB hub found
+May 16 04:09:14 SAR1STR1 kernel: hub 1-0:1.0: 8 ports detected
+May 16 04:09:14 SAR1STR1 kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+May 16 04:09:14 SAR1STR1 kernel: uhci_hcd: USB Universal Host Controller Interface driver
+May 16 04:09:14 SAR1STR1 kernel: PNP: No PS/2 controller found. Probing ports directly.
+May 16 04:09:14 SAR1STR1 kernel: Refined TSC clocksource calibration: 3392.031 MHz.
+May 16 04:09:14 SAR1STR1 kernel: Switching to clocksource tsc
+May 16 04:09:14 SAR1STR1 kernel: i8042.c: Can't read CTR while initializing i8042.
+May 16 04:09:14 SAR1STR1 kernel: i8042: probe of i8042 failed with error -5
+May 16 04:09:14 SAR1STR1 kernel: mice: PS/2 mouse device common for all mice
+May 16 04:09:14 SAR1STR1 kernel: rtc_cmos 00:03: RTC can wake from S4
+May 16 04:09:14 SAR1STR1 kernel: rtc_cmos 00:03: rtc core: registered rtc_cmos as rtc0
+May 16 04:09:14 SAR1STR1 kernel: rtc0: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+May 16 04:09:14 SAR1STR1 kernel: cpuidle: using governor ladder
+May 16 04:09:14 SAR1STR1 kernel: cpuidle: using governor menu
+May 16 04:09:14 SAR1STR1 kernel: EFI Variables Facility v0.08 2004-May-17
+May 16 04:09:14 SAR1STR1 kernel: usbcore: registered new interface driver hiddev
+May 16 04:09:14 SAR1STR1 kernel: usbcore: registered new interface driver usbhid
+May 16 04:09:14 SAR1STR1 kernel: usbhid: v2.6:USB HID core driver
+May 16 04:09:14 SAR1STR1 kernel: GRE over IPv4 demultiplexor driver
+May 16 04:09:14 SAR1STR1 kernel: TCP cubic registered
+May 16 04:09:14 SAR1STR1 kernel: Initializing XFRM netlink socket
+May 16 04:09:14 SAR1STR1 kernel: NET: Registered protocol family 17
+May 16 04:09:14 SAR1STR1 kernel: registered taskstats version 1
+May 16 04:09:14 SAR1STR1 kernel: rtc_cmos 00:03: setting system clock to 2021-05-15 20:09:00 UTC (1621109340)
+May 16 04:09:14 SAR1STR1 kernel: Initalizing network drop monitor service
+May 16 04:09:14 SAR1STR1 kernel: Freeing unused kernel memory: 1296k freed
+May 16 04:09:14 SAR1STR1 kernel: Write protecting the kernel read-only data: 10240k
+May 16 04:09:14 SAR1STR1 kernel: Freeing unused kernel memory: 788k freed
+May 16 04:09:14 SAR1STR1 kernel: Freeing unused kernel memory: 1568k freed
+May 16 04:09:14 SAR1STR1 kernel: dracut: dracut-004-356.el6
+May 16 04:09:14 SAR1STR1 kernel: dracut: rd_NO_LUKS: removing cryptoluks activation
+May 16 04:09:14 SAR1STR1 kernel: dracut: rd_NO_LVM: removing LVM activation
+May 16 04:09:14 SAR1STR1 kernel: device-mapper: uevent: version 1.0.3
+May 16 04:09:14 SAR1STR1 kernel: device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+May 16 04:09:14 SAR1STR1 kernel: udev: starting version 147
+May 16 04:09:14 SAR1STR1 kernel: dracut: Starting plymouth daemon
+May 16 04:09:14 SAR1STR1 kernel: dracut: rd_NO_DM: removing DM RAID activation
+May 16 04:09:14 SAR1STR1 kernel: dracut: rd_NO_MD: removing MD RAID activation
+May 16 04:09:14 SAR1STR1 kernel: usb 1-4: new high speed USB device number 2 using ehci_hcd
+May 16 04:09:14 SAR1STR1 kernel: ACPI: WMI: Mapper loaded
+May 16 04:09:14 SAR1STR1 kernel: ahci 0000:00:11.5: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+May 16 04:09:14 SAR1STR1 kernel: ahci 0000:00:11.5: AHCI 0001.0301 32 slots 6 ports 6 Gbps 0x3f impl SATA mode
+May 16 04:09:14 SAR1STR1 kernel: ahci 0000:00:11.5: flags: 64bit ncq sntf pm led clo only pio slum part ems apst 
+May 16 04:09:14 SAR1STR1 kernel: scsi0 : ahci
+May 16 04:09:14 SAR1STR1 kernel: scsi1 : ahci
+May 16 04:09:14 SAR1STR1 kernel: scsi2 : ahci
+May 16 04:09:14 SAR1STR1 kernel: scsi3 : ahci
+May 16 04:09:14 SAR1STR1 kernel: scsi4 : ahci
+May 16 04:09:14 SAR1STR1 kernel: scsi5 : ahci
+May 16 04:09:14 SAR1STR1 kernel: ata1: SATA max UDMA/133 abar m524288@0xd9d00000 port 0xd9d00100 irq 72
+May 16 04:09:14 SAR1STR1 kernel: ata2: SATA max UDMA/133 abar m524288@0xd9d00000 port 0xd9d00180 irq 72
+May 16 04:09:14 SAR1STR1 kernel: ata3: SATA max UDMA/133 abar m524288@0xd9d00000 port 0xd9d00200 irq 72
+May 16 04:09:14 SAR1STR1 kernel: ata4: SATA max UDMA/133 abar m524288@0xd9d00000 port 0xd9d00280 irq 72
+May 16 04:09:14 SAR1STR1 kernel: ata5: SATA max UDMA/133 abar m524288@0xd9d00000 port 0xd9d00300 irq 72
+May 16 04:09:14 SAR1STR1 kernel: ata6: SATA max UDMA/133 abar m524288@0xd9d00000 port 0xd9d00380 irq 72
+May 16 04:09:14 SAR1STR1 kernel: usb 1-4: New USB device found, idVendor=03f0, idProduct=2927
+May 16 04:09:14 SAR1STR1 kernel: usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+May 16 04:09:14 SAR1STR1 kernel: usb 1-4: Product: Virtual NIC
+May 16 04:09:14 SAR1STR1 kernel: usb 1-4: Manufacturer: HPE
+May 16 04:09:14 SAR1STR1 kernel: usb 1-4: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: ata1: SATA link down (SStatus 4 SControl 300)
+May 16 04:09:14 SAR1STR1 kernel: ata5: SATA link down (SStatus 4 SControl 300)
+May 16 04:09:14 SAR1STR1 kernel: ata2: SATA link down (SStatus 4 SControl 300)
+May 16 04:09:14 SAR1STR1 kernel: ata4: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+May 16 04:09:14 SAR1STR1 kernel: ata6: SATA link down (SStatus 4 SControl 300)
+May 16 04:09:14 SAR1STR1 kernel: ata3: SATA link down (SStatus 4 SControl 300)
+May 16 04:09:14 SAR1STR1 kernel: ata4.00: ACPI _SDD failed (AE 0x5)
+May 16 04:09:14 SAR1STR1 kernel: ata4: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+May 16 04:09:14 SAR1STR1 kernel: ata4.00: ACPI _SDD failed (AE 0x5)
+May 16 04:09:14 SAR1STR1 kernel: ata4.00: ACPI: failed the second time, disabled
+May 16 04:09:14 SAR1STR1 kernel: ata4.00: ATAPI: HPE      DVDROM DUD0N, UMD1, max UDMA/100, ATAPI AN
+May 16 04:09:14 SAR1STR1 kernel: ata4.00: configured for UDMA/100
+May 16 04:09:14 SAR1STR1 kernel: scsi 3:0:0:0: CD-ROM            HPE      DVDROM DUD0N     UMD1 PQ: 0 ANSI: 5
+May 16 04:09:14 SAR1STR1 kernel: xhci_hcd 0000:00:14.0: power state changed by ACPI to D0
+May 16 04:09:14 SAR1STR1 kernel: xhci_hcd 0000:00:14.0: power state changed by ACPI to D0
+May 16 04:09:14 SAR1STR1 kernel: xhci_hcd 0000:00:14.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+May 16 04:09:14 SAR1STR1 kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+May 16 04:09:14 SAR1STR1 kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+May 16 04:09:14 SAR1STR1 kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+May 16 04:09:14 SAR1STR1 kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 16 04:09:14 SAR1STR1 kernel: usb usb2: Product: xHCI Host Controller
+May 16 04:09:14 SAR1STR1 kernel: usb usb2: Manufacturer: Linux 2.6.32-504.el6.x86_64 xhci_hcd
+May 16 04:09:14 SAR1STR1 kernel: usb usb2: SerialNumber: 0000:00:14.0
+May 16 04:09:14 SAR1STR1 kernel: usb usb2: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: hub 2-0:1.0: USB hub found
+May 16 04:09:14 SAR1STR1 kernel: hub 2-0:1.0: 16 ports detected
+May 16 04:09:14 SAR1STR1 kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+May 16 04:09:14 SAR1STR1 kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 3
+May 16 04:09:14 SAR1STR1 kernel: usb usb3: config 1 interface 0 altsetting 0 endpoint 0x81 has no SuperSpeed companion descriptor
+May 16 04:09:14 SAR1STR1 kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0003
+May 16 04:09:14 SAR1STR1 kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 16 04:09:14 SAR1STR1 kernel: usb usb3: Product: xHCI Host Controller
+May 16 04:09:14 SAR1STR1 kernel: usb usb3: Manufacturer: Linux 2.6.32-504.el6.x86_64 xhci_hcd
+May 16 04:09:14 SAR1STR1 kernel: usb usb3: SerialNumber: 0000:00:14.0
+May 16 04:09:14 SAR1STR1 kernel: usb usb3: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: hub 3-0:1.0: USB hub found
+May 16 04:09:14 SAR1STR1 kernel: hub 3-0:1.0: 10 ports detected
+May 16 04:09:14 SAR1STR1 kernel: Adaptec aacraid driver 1.2-0[30300]-ms
+May 16 04:09:14 SAR1STR1 kernel: aacraid 0000:b1:00.0: PCI INT A -> GSI 48 (level, low) -> IRQ 48
+May 16 04:09:14 SAR1STR1 kernel: resource map sanity check conflict: 0xf3d00000 0xf3dfffff 0xf3d00000 0xf3d07fff 0000:b1:00.0
+May 16 04:09:14 SAR1STR1 kernel: ------------[ cut here ]------------
+May 16 04:09:14 SAR1STR1 kernel: WARNING: at arch/x86/mm/ioremap.c:98 __ioremap_caller+0x33f/0x390() (Tainted: G        W  ---------------   )
+May 16 04:09:14 SAR1STR1 kernel: Hardware name: ProLiant DL380 Gen10
+May 16 04:09:14 SAR1STR1 kernel: Info: mapping multiple BARs. Your kernel is fine.
+May 16 04:09:14 SAR1STR1 kernel: Modules linked in: aacraid(+) xhci_hcd ahci wmi dm_mirror dm_region_hash dm_log dm_mod
+May 16 04:09:14 SAR1STR1 kernel: Pid: 517, comm: work_for_cpu Tainted: G        W  ---------------    2.6.32-504.el6.x86_64 #1
+May 16 04:09:14 SAR1STR1 kernel: Call Trace:
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81074df7>] ? warn_slowpath_common+0x87/0xc0
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffffa0091e9e>] ? aac_srcv_ioremap+0x4e/0x80 [aacraid]
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81074ee6>] ? warn_slowpath_fmt+0x46/0x50
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff8104d75f>] ? __ioremap_caller+0x33f/0x390
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81173bb0>] ? cache_alloc_refill+0x1c0/0x240
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff8104d8c7>] ? ioremap_nocache+0x17/0x20
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffffa0091e9e>] ? aac_srcv_ioremap+0x4e/0x80 [aacraid]
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffffa009157c>] ? aac_srcv_init+0x4c/0x490 [aacraid]
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffffa00925a5>] ? aac_probe_one+0x1a1/0x493 [aacraid]
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81098480>] ? do_work_for_cpu+0x0/0x30
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff812aeea7>] ? local_pci_probe+0x17/0x20
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff81098498>] ? do_work_for_cpu+0x18/0x30
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff8109e66e>] ? kthread+0x9e/0xc0
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff8100c20a>] ? child_rip+0xa/0x20
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff8109e5d0>] ? kthread+0x0/0xc0
+May 16 04:09:14 SAR1STR1 kernel: [<ffffffff8100c200>] ? child_rip+0x0/0x20
+May 16 04:09:14 SAR1STR1 kernel: ---[ end trace a7919e7f17c0a727 ]---
+May 16 04:09:14 SAR1STR1 kernel: IRQ 48/aacraid: IRQF_DISABLED is not guaranteed on shared IRQs
+May 16 04:09:14 SAR1STR1 kernel: AAC0: Async. mode not supported by current driver, sync. mode enforced.
+May 16 04:09:14 SAR1STR1 kernel: Please update driver to get full performance.
+May 16 04:09:14 SAR1STR1 kernel: AAC0: kernel 2.65-0[0] Mar  5 2020
+May 16 04:09:14 SAR1STR1 kernel: AAC0: monitor 0.0-0[0]
+May 16 04:09:14 SAR1STR1 kernel: AAC0: bios 0.13-209[32000]
+May 16 04:09:14 SAR1STR1 kernel: AAC0: serial 10F447
+May 16 04:09:14 SAR1STR1 kernel: AAC0: Non-DASD support enabled.
+May 16 04:09:14 SAR1STR1 kernel: AAC0: 64bit support enabled.
+May 16 04:09:14 SAR1STR1 kernel: AAC0: 64 Bit DAC enabled
+May 16 04:09:14 SAR1STR1 kernel: scsi6 : aacraid
+May 16 04:09:14 SAR1STR1 kernel: scsi 6:0:0:0: Direct-Access     P408i-a  01DCA5A0PWXKV0B  V1.0 PQ: 0 ANSI: 2
+May 16 04:09:14 SAR1STR1 kernel: scsi 6:3:123:0: Enclosure         HPE      Smart Adapter    2.65 PQ: 0 ANSI: 5
+May 16 04:09:14 SAR1STR1 kernel: sr0: scsi3-mmc drive: 24x/24x cd/rw xa/form2 cdda tray
+May 16 04:09:14 SAR1STR1 kernel: Uniform CD-ROM driver Revision: 3.20
+May 16 04:09:14 SAR1STR1 kernel: STARTING CRC_T10DIF
+May 16 04:09:14 SAR1STR1 kernel: sd 6:0:0:0: [sda] 3750545072 512-byte logical blocks: (1.92 TB/1.74 TiB)
+May 16 04:09:14 SAR1STR1 kernel: sd 6:0:0:0: [sda] Write Protect is off
+May 16 04:09:14 SAR1STR1 kernel: sd 6:0:0:0: [sda] Write cache: disabled, read cache: enabled, supports DPO and FUA
+May 16 04:09:14 SAR1STR1 kernel: sda: sda1 sda2 sda3 sda4 sda5
+May 16 04:09:14 SAR1STR1 kernel: sd 6:0:0:0: [sda] Attached SCSI removable disk
+May 16 04:09:14 SAR1STR1 kernel: usb 2-3: new high speed USB device number 2 using xhci_hcd
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda2): recovery required on readonly filesystem
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda2): write access will be enabled during recovery
+May 16 04:09:14 SAR1STR1 kernel: usb 2-3: New USB device found, idVendor=0424, idProduct=2660
+May 16 04:09:14 SAR1STR1 kernel: usb 2-3: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+May 16 04:09:14 SAR1STR1 kernel: usb 2-3: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: hub 2-3:1.0: USB hub found
+May 16 04:09:14 SAR1STR1 kernel: hub 2-3:1.0: 2 ports detected
+May 16 04:09:14 SAR1STR1 kernel: kjournald starting.  Commit interval 5 seconds
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda2): recovery complete
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda2): mounted filesystem with ordered data mode
+May 16 04:09:14 SAR1STR1 kernel: dracut: Mounted root filesystem /dev/sda2
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13: new high speed USB device number 3 using xhci_hcd
+May 16 04:09:14 SAR1STR1 kernel: SELinux:  Disabled at runtime.
+May 16 04:09:14 SAR1STR1 kernel: type=1404 audit(1621109347.341:2): selinux=0 auid=4294967295 ses=4294967295
+May 16 04:09:14 SAR1STR1 kernel: dracut: 
+May 16 04:09:14 SAR1STR1 kernel: dracut: Switching root
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13: New USB device found, idVendor=2297, idProduct=0210
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13: Product: General Purpose USB Hub
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13: Manufacturer: Avocent
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: hub 2-13:1.0: USB hub found
+May 16 04:09:14 SAR1STR1 kernel: hub 2-13:1.0: 3 ports detected
+May 16 04:09:14 SAR1STR1 kernel: udev: starting version 147
+May 16 04:09:14 SAR1STR1 kernel: usb 3-4: new SuperSpeed USB device number 2 using xhci_hcd
+May 16 04:09:14 SAR1STR1 kernel: usb 3-4: New USB device found, idVendor=0bda, idProduct=0329
+May 16 04:09:14 SAR1STR1 kernel: usb 3-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+May 16 04:09:14 SAR1STR1 kernel: usb 3-4: Product: USB3.0-CRW
+May 16 04:09:14 SAR1STR1 kernel: usb 3-4: Manufacturer: Generic
+May 16 04:09:14 SAR1STR1 kernel: usb 3-4: SerialNumber: 29203008282014000
+May 16 04:09:14 SAR1STR1 kernel: usb 3-4: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: sr 3:0:0:0: Attached scsi generic sg0 type 5
+May 16 04:09:14 SAR1STR1 kernel: sd 6:0:0:0: Attached scsi generic sg1 type 0
+May 16 04:09:14 SAR1STR1 kernel: scsi 6:3:123:0: Attached scsi generic sg2 type 13
+May 16 04:09:14 SAR1STR1 kernel: hpwdt 0000:01:00.0: This server does not have an iLO2+ ASIC.
+May 16 04:09:14 SAR1STR1 kernel: hpilo 0000:01:00.2: PCI INT B -> GSI 17 (level, low) -> IRQ 17
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13.1: new high speed USB device number 4 using xhci_hcd
+May 16 04:09:14 SAR1STR1 kernel: cdc_eem 1-4:1.0: usb0: register 'cdc_eem' at usb-0000:01:00.4-4, CDC EEM Device, 92:25:a8:d1:a9:b2
+May 16 04:09:14 SAR1STR1 kernel: usbcore: registered new interface driver cdc_eem
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13.1: New USB device found, idVendor=0624, idProduct=0916
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13.1: Product: HP AF628A USBFS (PACER-I
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13.1: Manufacturer: AVOCENT 
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13.1: SerialNumber: 520916-0885E9-0000
+May 16 04:09:14 SAR1STR1 kernel: usb 2-13.1: configuration #1 chosen from 1 choice
+May 16 04:09:14 SAR1STR1 kernel: input: AVOCENT  HP AF628A USBFS (PACER-I as /devices/pci0000:00/0000:00:14.0/usb2/2-13/2-13.1/2-13.1:1.0/input/input2
+May 16 04:09:14 SAR1STR1 kernel: generic-usb 0003:0624:0916.0001: input,hidraw0: USB HID v1.11 Keyboard [AVOCENT  HP AF628A USBFS (PACER-I] on usb-0000:00:14.0-13.1/input0
+May 16 04:09:14 SAR1STR1 kernel: input: AVOCENT  HP AF628A USBFS (PACER-I as /devices/pci0000:00/0000:00:14.0/usb2/2-13/2-13.1/2-13.1:1.1/input/input3
+May 16 04:09:14 SAR1STR1 kernel: generic-usb 0003:0624:0916.0002: input,hidraw1: USB HID v1.11 Mouse [AVOCENT  HP AF628A USBFS (PACER-I] on usb-0000:00:14.0-13.1/input1
+May 16 04:09:14 SAR1STR1 kernel: ipmi message handler version 39.2
+May 16 04:09:14 SAR1STR1 kernel: IPMI System Interface driver.
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: probing via ACPI
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si 00:08: [io  0x0ca2-0x0ca3] regsize 1 spacing 1 irq 0
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: Adding ACPI-specified kcs state machine
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: probing via SMBIOS
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: SMBIOS: io 0xca2 regsize 1 spacing 1 irq 0
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: Adding SMBIOS-specified kcs state machine duplicate interface
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: probing via SPMI
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: SPMI: io 0xca3 regsize 1 spacing 1 irq 0
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: Adding SPMI-specified kcs state machine
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si: Trying ACPI-specified kcs state machine at i/o address 0xca2, slave address 0x0, irq 0
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si 00:08: Found new BMC (man_id: 0x00b85c, prod_id: 0x2000, dev_id: 0x13)
+May 16 04:09:14 SAR1STR1 kernel: ipmi_si 00:08: IPMI kcs interface initialized
+May 16 04:09:14 SAR1STR1 kernel: power_meter ACPI000D:00: Found ACPI power meter.
+May 16 04:09:14 SAR1STR1 kernel: pps_core: LinuxPPS API ver. 1 registered
+May 16 04:09:14 SAR1STR1 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+May 16 04:09:14 SAR1STR1 kernel: PTP clock support registered
+May 16 04:09:14 SAR1STR1 kernel: dca service started, version 1.12.1
+May 16 04:09:14 SAR1STR1 kernel: igb: Intel(R) Gigabit Ethernet Network Driver - version 5.0.5-k
+May 16 04:09:14 SAR1STR1 kernel: igb: Copyright (c) 2007-2014 Intel Corporation.
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.0: PCI INT D -> GSI 52 (level, low) -> IRQ 52
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.0: added PHC on eth0
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.0: Intel(R) Gigabit Ethernet Network Connection
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.0: eth0: (PCIe:5.0Gb/s:Width x4) d4:f5:ef:02:42:2c
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.0: eth0: PBA No: G41713-019
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.0: Using MSI-X interrupts. 6 rx queue(s), 6 tx queue(s)
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.1: PCI INT C -> GSI 54 (level, low) -> IRQ 54
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.1: added PHC on eth1
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.1: Intel(R) Gigabit Ethernet Network Connection
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.1: eth1: (PCIe:5.0Gb/s:Width x4) d4:f5:ef:02:42:2d
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.1: eth1: PBA No: G41713-019
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.1: Using MSI-X interrupts. 6 rx queue(s), 6 tx queue(s)
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.2: PCI INT B -> GSI 53 (level, low) -> IRQ 53
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.2: added PHC on eth2
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.2: Intel(R) Gigabit Ethernet Network Connection
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.2: eth2: (PCIe:5.0Gb/s:Width x4) d4:f5:ef:02:42:2e
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.2: eth2: PBA No: G41713-019
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.2: Using MSI-X interrupts. 6 rx queue(s), 6 tx queue(s)
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.3: PCI INT A -> GSI 50 (level, low) -> IRQ 50
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.3: added PHC on eth3
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.3: Intel(R) Gigabit Ethernet Network Connection
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.3: eth3: (PCIe:5.0Gb/s:Width x4) d4:f5:ef:02:42:2f
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.3: eth3: PBA No: G41713-019
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.3: Using MSI-X interrupts. 6 rx queue(s), 6 tx queue(s)
+May 16 04:09:14 SAR1STR1 kernel: ses 6:3:123:0: Attached Enclosure device
+May 16 04:09:14 SAR1STR1 kernel: microcode: CPU0 sig=0x50654, pf=0x80, revision=0x2000069
+May 16 04:09:14 SAR1STR1 kernel: platform microcode: firmware: requesting intel-ucode/06-55-04
+May 16 04:09:14 SAR1STR1 kernel: udev: renamed network interface eth1 to ring2
+May 16 04:09:14 SAR1STR1 kernel: udev: renamed network interface eth0 to ring1
+May 16 04:09:14 SAR1STR1 kernel: microcode: CPU1 sig=0x50654, pf=0x80, revision=0x2000069
+May 16 04:09:14 SAR1STR1 kernel: platform microcode: firmware: requesting intel-ucode/06-55-04
+May 16 04:09:14 SAR1STR1 kernel: microcode: CPU2 sig=0x50654, pf=0x80, revision=0x2000069
+May 16 04:09:14 SAR1STR1 kernel: platform microcode: firmware: requesting intel-ucode/06-55-04
+May 16 04:09:14 SAR1STR1 kernel: microcode: CPU3 sig=0x50654, pf=0x80, revision=0x2000069
+May 16 04:09:14 SAR1STR1 kernel: platform microcode: firmware: requesting intel-ucode/06-55-04
+May 16 04:09:14 SAR1STR1 kernel: microcode: CPU4 sig=0x50654, pf=0x80, revision=0x2000069
+May 16 04:09:14 SAR1STR1 kernel: platform microcode: firmware: requesting intel-ucode/06-55-04
+May 16 04:09:14 SAR1STR1 kernel: microcode: CPU5 sig=0x50654, pf=0x80, revision=0x2000069
+May 16 04:09:14 SAR1STR1 kernel: platform microcode: firmware: requesting intel-ucode/06-55-04
+May 16 04:09:14 SAR1STR1 kernel: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+May 16 04:09:14 SAR1STR1 kernel: Initializing USB Mass Storage driver...
+May 16 04:09:14 SAR1STR1 kernel: scsi7 : SCSI emulation for USB Mass Storage devices
+May 16 04:09:14 SAR1STR1 kernel: usbcore: registered new interface driver usb-storage
+May 16 04:09:14 SAR1STR1 kernel: USB Mass Storage support registered.
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda2): using internal journal
+May 16 04:09:14 SAR1STR1 kernel: kjournald starting.  Commit interval 5 seconds
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda5): using internal journal
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda5): mounted filesystem with ordered data mode
+May 16 04:09:14 SAR1STR1 kernel: kjournald starting.  Commit interval 5 seconds
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda3): using internal journal
+May 16 04:09:14 SAR1STR1 kernel: EXT3-fs (sda3): mounted filesystem with ordered data mode
+May 16 04:09:14 SAR1STR1 kernel: Adding 6143996k swap on /dev/sda4.  Priority:-1 extents:1 across:6143996k 
+May 16 04:09:14 SAR1STR1 kernel: NET: Registered protocol family 10
+May 16 04:09:14 SAR1STR1 kernel: lo: Disabled Privacy Extensions
+May 16 04:09:14 SAR1STR1 kernel: scsi 7:0:0:0: Direct-Access     Generic- SD/MMC CRW       1.00 PQ: 0 ANSI: 6
+May 16 04:09:14 SAR1STR1 kernel: sd 7:0:0:0: Attached scsi generic sg3 type 0
+May 16 04:09:14 SAR1STR1 kernel: sd 7:0:0:0: [sdb] Attached SCSI removable disk
+May 16 04:09:14 SAR1STR1 kernel: ADDRCONF(NETDEV_UP): ring1: link is not ready
+May 16 04:09:14 SAR1STR1 kernel: ADDRCONF(NETDEV_UP): ring2: link is not ready
+May 16 04:09:14 SAR1STR1 kernel: igb 0000:b2:00.0: ring1: igb: ring1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+May 16 04:09:14 SAR1STR1 kernel: ADDRCONF(NETDEV_CHANGE): ring1: link becomes ready
+May 16 04:09:14 SAR1STR1 kernel: type=1305 audit(1621109353.880:3): audit_pid=1963 old=0 auid=4294967295 ses=4294967295 res=1
+May 16 04:09:14 SAR1STR1 kernel: p4-clockmod: Warning: EST-capable CPU detected. The acpi-cpufreq module offers voltage scaling in addition to frequency scaling. You should use that instead of p4-clockmod, if possible.
+May 16 04:09:14 SAR1STR1 kdump: kexec: loaded kdump kernel
+May 16 04:09:14 SAR1STR1 kdump: started up
+May 16 04:09:14 SAR1STR1 lldpad: bound ctrl iface to /com/intel/lldpad
+May 16 04:09:14 SAR1STR1 kernel: 802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+May 16 04:09:14 SAR1STR1 kernel: All bugs added by David S. Miller <davem@redhat.com>
+May 16 04:09:14 SAR1STR1 kernel: 8021q: adding VLAN 0 to HW filter on device ring1
+May 16 04:09:14 SAR1STR1 kernel: 8021q: adding VLAN 0 to HW filter on device ring2
+May 16 04:09:14 SAR1STR1 kernel: cnic: Broadcom NetXtreme II CNIC Driver cnic v2.5.20 (March 14, 2014)
+May 16 04:09:14 SAR1STR1 kernel: bnx2fc: Broadcom NetXtreme II FCoE Driver bnx2fc v2.4.2 (Dec 11, 2013)
+May 16 04:09:14 SAR1STR1 kernel: netlink: 12 bytes leftover after parsing attributes.
+May 16 04:09:14 SAR1STR1 kernel: netlink: 12 bytes leftover after parsing attributes.
+May 16 04:09:14 SAR1STR1 kernel: netlink: 12 bytes leftover after parsing attributes.
+May 16 04:09:14 SAR1STR1 kernel: netlink: 12 bytes leftover after parsing attributes.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> NetworkManager (version 0.8.1-75.el6) is starting...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> trying to start the modem manager...
+May 16 04:09:14 SAR1STR1 modem-manager: ModemManager (version 0.4.0-5.git20100628.el6) starting...
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin ZTE
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Longcheer
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Nokia
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Option
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Novatel
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Generic
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Option High-Speed
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Sierra
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Gobi
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin SimTech
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Ericsson MBM
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin MotoC
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin Huawei
+May 16 04:09:14 SAR1STR1 modem-manager: Loaded plugin AnyData
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> monitoring kernel firmware directory '/lib/firmware'.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Bonding/Bridging/VLAN support disabled
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh: Acquired D-Bus service com.redhat.ifcfgrh1
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Loaded plugin ifcfg-rh: (c) 2007 - 2008 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Loaded plugin keyfile: (c) 2007 - 2008 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-lo ... 
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-eth3 ... 
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh:     read connection 'System eth3'
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-eth2 ... 
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh:     read connection 'System eth2'
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-usb0 ... 
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh:     read connection 'System usb0'
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-eth1 ... 
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh:     read connection 'System eth1'
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh: parsing /etc/sysconfig/network-scripts/ifcfg-eth0 ... 
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]:    ifcfg-rh:     read connection 'System eth0'
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> WiFi enabled by radio killswitch; enabled by state file
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> WWAN enabled by radio killswitch; enabled by state file
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> WiMAX enabled by radio killswitch; enabled by state file
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Networking is enabled by state file
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): carrier is OFF
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): new Ethernet device (driver: 'cdc_eem' ifindex: 2)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): exported as /org/freedesktop/NetworkManager/Devices/0
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): now managed
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): device state change: unmanaged -> unavailable (reason 'managed') [1 2 2]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): bringing up device.
+May 16 04:09:14 SAR1STR1 rpc.statd[2242]: Version 1.2.3 starting
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): carrier now ON (device state 2)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): preparing device.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): deactivating device (reason 'managed') [2]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Added default wired connection 'Auto usb0' for /sys/devices/pci0000:00/0000:00:1c.4/0000:01:00.4/usb1/1-4/1-4:1.0/net/usb0
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring1): carrier is ON
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring1): new Ethernet device (driver: 'igb' ifindex: 3)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring1): exported as /org/freedesktop/NetworkManager/Devices/1
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring1): now managed
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring1): device state change: unmanaged -> unavailable (reason 'connection-assumed') [1 2 41]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring1): preparing device.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) starting connection 'System eth0'
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: (nm-device.c:3317):nm_device_activate: runtime check failed: (priv->state == NM_DEVICE_STATE_DISCONNECTED)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring1): device state change: unavailable -> ip-config (reason 'none') [2 7 0]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 3 of 5 (IP Configure Start) scheduled.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring2): carrier is OFF
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring2): new Ethernet device (driver: 'igb' ifindex: 4)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring2): exported as /org/freedesktop/NetworkManager/Devices/2
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring2): now managed
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring2): device state change: unmanaged -> unavailable (reason 'connection-assumed') [1 2 41]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (ring2): preparing device.
+May 16 04:09:14 SAR1STR1 sm-notify[2243]: Version 1.2.3 starting
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): carrier is OFF
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): new Ethernet device (driver: 'igb' ifindex: 5)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): exported as /org/freedesktop/NetworkManager/Devices/3
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): now managed
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): device state change: unmanaged -> unavailable (reason 'managed') [1 2 2]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): bringing up device.
+May 16 04:09:14 SAR1STR1 kernel: ADDRCONF(NETDEV_UP): eth2: link is not ready
+May 16 04:09:14 SAR1STR1 kernel: 8021q: adding VLAN 0 to HW filter on device eth2
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): preparing device.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth2): deactivating device (reason 'managed') [2]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): carrier is OFF
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): new Ethernet device (driver: 'igb' ifindex: 6)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): exported as /org/freedesktop/NetworkManager/Devices/4
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): now managed
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): device state change: unmanaged -> unavailable (reason 'managed') [1 2 2]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): bringing up device.
+May 16 04:09:14 SAR1STR1 kernel: ADDRCONF(NETDEV_UP): eth3: link is not ready
+May 16 04:09:14 SAR1STR1 kernel: 8021q: adding VLAN 0 to HW filter on device eth3
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): preparing device.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (eth3): deactivating device (reason 'managed') [2]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): carrier now OFF (device state 2)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): carrier now ON (device state 2)
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> modem-manager is now available
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Trying to start the supplicant...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): device state change: unavailable -> disconnected (reason 'none') [2 3 0]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 3 of 5 (IP Configure Start) started...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 4 of 5 (IP4 Configure Get) scheduled...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Beginning IP6 addrconf.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 3 of 5 (IP Configure Start) complete.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Auto-activating connection 'Auto usb0'.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) starting connection 'Auto usb0'
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): device state change: disconnected -> prepare (reason 'none') [3 4 0]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 1 of 5 (Device Prepare) scheduled...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 4 of 5 (IP4 Configure Get) started...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 4 of 5 (IP4 Configure Get) complete.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 1 of 5 (Device Prepare) started...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 2 of 5 (Device Configure) scheduled...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 1 of 5 (Device Prepare) complete.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 2 of 5 (Device Configure) starting...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): device state change: prepare -> config (reason 'none') [4 5 0]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 2 of 5 (Device Configure) successful.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 3 of 5 (IP Configure Start) scheduled.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 2 of 5 (Device Configure) complete.
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 3 of 5 (IP Configure Start) started...
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): device state change: config -> ip-config (reason 'none') [5 7 0]
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Beginning DHCPv4 transaction
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> dhclient started with pid 2273
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) DHCPv4 will time out in 45 seconds
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 3 of 5 (IP Configure Start) complete.
+May 16 04:09:14 SAR1STR1 dhclient[2273]: Internet Systems Consortium DHCP Client 4.1.1-P1
+May 16 04:09:14 SAR1STR1 dhclient[2273]: Copyright 2004-2010 Internet Systems Consortium.
+May 16 04:09:14 SAR1STR1 dhclient[2273]: All rights reserved.
+May 16 04:09:14 SAR1STR1 dhclient[2273]: For info, please visit https://www.isc.org/software/dhcp/
+May 16 04:09:14 SAR1STR1 dhclient[2273]: 
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> (usb0): DHCPv4 state changed nbi -> preinit
+May 16 04:09:14 SAR1STR1 dhclient[2273]: Listening on LPF/usb0/92:25:a8:d1:a9:b2
+May 16 04:09:14 SAR1STR1 dhclient[2273]: Sending on   LPF/usb0/92:25:a8:d1:a9:b2
+May 16 04:09:14 SAR1STR1 dhclient[2273]: Sending on   Socket/fallback
+May 16 04:09:14 SAR1STR1 NetworkManager[2221]: <info> wpa_supplicant started
+May 16 04:09:15 SAR1STR1 acpid: starting up
+May 16 04:09:15 SAR1STR1 acpid: 1 rule loaded
+May 16 04:09:15 SAR1STR1 acpid: waiting for events: event logging is off
+May 16 04:09:15 SAR1STR1 acpid: client connected from 2362[68:68]
+May 16 04:09:15 SAR1STR1 acpid: 1 client rule loaded
+May 16 04:09:15 SAR1STR1 snmpd[2385]: Turning on AgentX master support.
+May 16 04:09:15 SAR1STR1 snmpd[2385]: /etc/snmp/snmpd.conf: line 154: Warning: Unknown token: syschassis.
+May 16 04:09:15 SAR1STR1 snmpd[2385]: /etc/snmp/snmpd.conf: line 366: Error: ERROR: This output format has been deprecated - Please use the 'extend' directive instead
+May 16 04:09:15 SAR1STR1 snmpd[2385]: net-snmp: 1 error(s) in config file(s)
+May 16 04:09:15 SAR1STR1 snmpd[2389]: NET-SNMP version 5.5
+May 16 04:09:15 SAR1STR1 xinetd[2416]: xinetd Version 2.3.14 started with libwrap loadavg labeled-networking options compiled in.
+May 16 04:09:15 SAR1STR1 xinetd[2416]: Started working: 0 available services
+May 16 04:09:15 SAR1STR1 ntpd[2424]: ntpd 4.2.6p5@1.2349-o Mon Jul 15 09:22:49 UTC 2013 (1)
+May 16 04:09:15 SAR1STR1 ntpd[2425]: proto: precision = 0.042 usec
+May 16 04:09:15 SAR1STR1 ntpd[2425]: 0.0.0.0 c01d 0d kern kernel time sync enabled
+May 16 04:09:15 SAR1STR1 ntpd[2425]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+May 16 04:09:15 SAR1STR1 ntpd[2425]: Listen and drop on 1 v6wildcard :: UDP 123
+May 16 04:09:15 SAR1STR1 ntpd[2425]: Listen normally on 2 lo 127.0.0.1 UDP 123
+May 16 04:09:15 SAR1STR1 ntpd[2425]: Listen normally on 3 ring1 192.168.69.111 UDP 123
+May 16 04:09:15 SAR1STR1 ntpd[2425]: Listen normally on 4 ring2 192.168.70.111 UDP 123
+May 16 04:09:15 SAR1STR1 ntpd[2425]: Listen normally on 5 lo ::1 UDP 123
+May 16 04:09:15 SAR1STR1 ntpd[2425]: peers refreshed
+May 16 04:09:15 SAR1STR1 ntpd[2425]: Listening on routing socket on fd #22 for interface updates
+May 16 04:09:16 SAR1STR1 abrtd: Init complete, entering main loop
+May 16 04:09:18 SAR1STR1 dhclient[2273]: DHCPDISCOVER on usb0 to 255.255.255.255 port 67 interval 6 (xid=0x202a117)
+May 16 04:09:18 SAR1STR1 dhclient[2273]: DHCPOFFER from 16.1.15.1
+May 16 04:09:18 SAR1STR1 dhclient[2273]: DHCPREQUEST on usb0 to 255.255.255.255 port 67 (xid=0x202a117)
+May 16 04:09:18 SAR1STR1 dhclient[2273]: DHCPACK from 16.1.15.1 (xid=0x202a117)
+May 16 04:09:18 SAR1STR1 dhclient[2273]: bound to 16.1.15.2 -- renewal in 4012436 seconds.
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info> (usb0): DHCPv4 state changed preinit -> bound
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 4 of 5 (IP4 Configure Get) scheduled...
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 4 of 5 (IP4 Configure Get) started...
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info>   address 16.1.15.2
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info>   prefix 30 (255.255.255.252)
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info>   domain name 'local'
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 5 of 5 (IP Configure Commit) scheduled...
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 4 of 5 (IP4 Configure Get) complete.
+May 16 04:09:18 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 5 of 5 (IP Configure Commit) started...
+May 16 04:09:19 SAR1STR1 NetworkManager[2221]: <info> (usb0): device state change: ip-config -> activated (reason 'none') [7 8 0]
+May 16 04:09:19 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) successful, device activated.
+May 16 04:09:19 SAR1STR1 NetworkManager[2221]: <info> Activation (usb0) Stage 5 of 5 (IP Configure Commit) complete.
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> (ring1): IP6 addrconf timed out or failed.
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 4 of 5 (IP6 Configure Timeout) scheduled...
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 4 of 5 (IP6 Configure Timeout) started...
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 5 of 5 (IP Configure Commit) scheduled...
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 4 of 5 (IP6 Configure Timeout) complete.
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 5 of 5 (IP Configure Commit) started...
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> (ring1): device state change: ip-config -> activated (reason 'none') [7 8 0]
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) successful, device activated.
+May 16 04:09:34 SAR1STR1 NetworkManager[2221]: <info> Activation (ring1) Stage 5 of 5 (IP Configure Commit) complete.
+May 17 09:58:47 SAR1STR1 auditd[1963]: Audit daemon rotating log files

@@ -1,0 +1,14 @@
+{
+    "messages_CCT": [
+        18,
+        "May 25 11:36:06 CCT1 kernel: sd 8:0:0:0: [sdc] Attached SCSI removable disk\n"
+    ],
+    "messages-20210506_CCT": [
+        1127,
+        "May  6 09:49:27 CCT1 NetworkManager[2406]: <info> Activation (ring1) Stage 5 of 5 (IP Configure Commit) complete.\n"
+    ],
+    "messages_DGS-SVR": [
+        1772,
+        "May 24 16:53:48 DGS-SVR org.freedesktop.FileManager1: number of files 1\n"
+    ]
+}
