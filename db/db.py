@@ -6,9 +6,9 @@ import time
 
 host = 'localhost'
 port = 3306
-db = 'hd_server_local'
-user = 'root'
-password = '1'
+db = 'hd_server'
+user = 'host'
+password = '123456'
 
 
 # ---- 用pymysql 操作数据库

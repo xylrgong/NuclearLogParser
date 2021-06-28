@@ -1,10 +1,10 @@
 from config.pattern import *
 # line_num_content_dict = {}
-line_num_content_addr = './config/line_content_dict.json'
+line_num_content_addr = '/home/host/log_parse/config/line_content_dict.json'
 
-# log_parsed_name = ['SW1', 'cron', 'messages', 'secure', 'boot', 'maillog', 'dmesg']
-log_parsed_name = ['messages']
-log_parsed_regex = '(SW1)|^(cron|messages|maillog|secure|dmesg)'
+log_parsed_name = ['SW1', 'cron', 'messages', 'secure', 'maillog', 'dmesg']
+# log_parsed_name = ['messages']
+log_parsed_regex = '(SW1)|^(cron|messages|cron|secure|dmesg)'
 
 # log_parsed_regex = '(SW1)|^(messages)-(\d)*'
 
@@ -12,14 +12,14 @@ log_parsed_regex = '(SW1)|^(cron|messages|maillog|secure|dmesg)'
 #     'SW1' , 'CCT', 'DGS-SVR', 'SAR1STR1', 'SAS'
 # ]
 
-device_name = ['DGS-SVR']
+device_name = ['DGS-SVR', 'CCT1', 'SAS1', 'SAR1STR1', 'SW1']
 
 log_dir = {
-    'SW1': 'SWITCH/',
-    'CCT': '../LOG/TERMINAL/CCT/log/',
-    'DGS-SVR': '../LOG/TERMINAL/DGS-SVR/SYSLOG/',
-    'SAR1STR1': '../LOG/TERMINAL/SAR1STR1/log/',
-    'SAS': '../LOG/TERMINAL/SAS/SYSLOG/log/'
+    'SW1': '/var/log/switch_log/SW1/',
+    'CCT1': '/var/log/terminal_log/CCT1/sys/',
+    'DGS-SVR': '/var/log/terminal_log/DGS-SVR/sys/',
+    'SAR1STR1': '/var/log/terminal_log/SAR1STR1/sys/',
+    'SAS1': '/var/log/terminal_log/SAS1/sys/'
 }
 
 this_year = '2021/'
@@ -45,6 +45,7 @@ dict_pattr = {
     'maillog': maillog,
     'secure': secure,
     'messages': messages,
+    'dmesg': dmesg,
 }
 
 time_dict = {
@@ -56,4 +57,4 @@ time_dict = {
     'dmesg': 0,
 }
 
-trash_dir = '../../LOG/trash'
+# trash_dir = '../../LOG/trash'

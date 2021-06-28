@@ -41,6 +41,8 @@ def log_passer(addr, pattr, devicename, timetype, startline=0):   # receive an a
                     #print('################')
                     if res != None:
                         tmp_dict['type'] = res.group(2).replace('(','')
+                        if bool(re.search('info', tmp_dict['type'], re.IGNORECASE)):
+                            tmp_dict['type'] = 'Info'
                         if bool(re.search('debug', tmp_dict['type'], re.IGNORECASE)):
                             tmp_dict['type'] = 'Debug'
                         elif bool(re.search('warn', tmp_dict['type'], re.IGNORECASE)):
@@ -69,8 +71,8 @@ def log_passer(addr, pattr, devicename, timetype, startline=0):   # receive an a
             js = json.dumps(res_dic)
             result.append(js)
             insert_log(result)
-            print(result)
-        return
+            # print(result)
+        return line_num
 
 
 def parse_a_sentence(raw_data, devicename, keys, values, timetype):
@@ -94,6 +96,8 @@ def parse_a_sentence(raw_data, devicename, keys, values, timetype):
             #print('################')
             if res != None:
                 tmp_dict['type'] = res.group(2).replace('(','')
+                if bool(re.search('info', tmp_dict['type'], re.IGNORECASE)):
+                    tmp_dict['type'] = 'Info'
                 if bool(re.search('debug', tmp_dict['type'], re.IGNORECASE)):
                     tmp_dict['type'] = 'Debug'
                 elif bool(re.search('warn', tmp_dict['type'], re.IGNORECASE)):
@@ -132,6 +136,8 @@ def file_line_num_content_comparison(addr, filename, device, line_num_content_di
         new_list = []
         new_list.append(linenum)
         new_list.append(content_last_line)
+        time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        print('****************{}****************'.format(time))
         if key not in line_num_content_dict.keys():
             print('In branch 1: new file:{} at {}'.format(filename, device))
             line_num_content_dict[key] = new_list
@@ -141,6 +147,7 @@ def file_line_num_content_comparison(addr, filename, device, line_num_content_di
             print('In branch 2: old file:{} at {}'.format(filename, device))
             return -1
         elif line_num_content_dict[key] != new_list:
+            print()
             print('In branch 3: file changed')
             old_line_num = line_num_content_dict[key][0]
             if old_line_num < linenum:
@@ -171,7 +178,12 @@ def start_parse(line_num_content_dict):
                                                          device= device,
                                                          line_num_content_dict=line_num_content_dict)
             if startline != -1:
-                log_passer(addr, pattr, devicename=device,timetype=timetype,startline=startline)
+                start_t = datetime.now()
+                line_num = log_passer(addr, pattr, devicename=device,timetype=timetype,startline=startline)
+                end_t = datetime.now()
+                t = end_t - start_t
+                t = t.seconds
+                print('将{}条{}设备的日志分析并写入数据库，用时{}s'.format(line_num, device, t))
                 # move_file(work_dir, trash_dir, filename)
     return
 

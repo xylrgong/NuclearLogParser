@@ -36,4 +36,4 @@ if __name__ == '__main__':
     # read_line_num_content_from_json(addr+filename)
     # exit_save(line_num_content_dict)
     json_str = json.dumps(line_num_content_dict, indent=4)
-    print(json_str)
+    # print(json_str)

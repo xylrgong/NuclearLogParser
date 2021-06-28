@@ -1,14 +1,70 @@
 {
-    "messages_CCT": [
-        18,
-        "May 25 11:36:06 CCT1 kernel: sd 8:0:0:0: [sdc] Attached SCSI removable disk\n"
+    "cron_DGS-SVR": [
+        327,
+        "Jun 28 12:30:01 DGS-SVR CROND[357884]: (root) CMD (/usr/lib64/sa/sa1 1 1)\n"
     ],
-    "messages-20210506_CCT": [
-        1127,
-        "May  6 09:49:27 CCT1 NetworkManager[2406]: <info> Activation (ring1) Stage 5 of 5 (IP Configure Commit) complete.\n"
+    "secure_DGS-SVR": [
+        50,
+        "Jun 28 00:45:27 DGS-SVR sshd[384927]: pam_unix(sshd:session): session closed for user adacs\n"
+    ],
+    "dmesg_DGS-SVR": [
+        1778,
+        "[    3.992911] type=1305 audit(1624239182.557:3): audit_pid=726 old=0 auid=4294967295 ses=4294967295 res=1\n"
     ],
     "messages_DGS-SVR": [
-        1772,
-        "May 24 16:53:48 DGS-SVR org.freedesktop.FileManager1: number of files 1\n"
+        2653,
+        "Jun 28 12:30:01 DGS-SVR systemd: Stopping User Slice of root.\n"
+    ],
+    "cron_CCT1": [
+        1143,
+        "Jun 28 12:30:01 CCT1 CROND[31966]: (adacs) CMD (. /home/adacs/.bashrc;/home/adacs/ADACS_RT/com_cmd/print_drift_logbook.sh)\n"
+    ],
+    "secure_CCT1": [
+        13,
+        "Jun 28 00:51:39 CCT1 sshd[4049]: pam_unix(sshd:session): session closed for user adacs\n"
+    ],
+    "dmesg_CCT1": [
+        1492,
+        "Adding 6094844k swap on /dev/sda2.  Priority:-1 extents:1 across:6094844k \n"
+    ],
+    "messages_CCT1": [
+        19,
+        "Jun 27 23:27:44 CCT1 kernel: usb 3-2: USB disconnect, device number 3\n"
+    ],
+    "cron_SAS1": [
+        327,
+        "Jun 28 12:30:01 SAS1 CROND[104620]: (root) CMD (/usr/lib64/sa/sa1 1 1)\n"
+    ],
+    "secure_SAS1": [
+        1855,
+        "Jun 28 12:29:34 SAS1 sshd[104449]: pam_unix(sshd:session): session closed for user adacs\n"
+    ],
+    "dmesg_SAS1": [
+        1726,
+        "[    3.972886] type=1305 audit(1624417122.547:3): audit_pid=659 old=0 auid=4294967295 ses=4294967295 res=1\n"
+    ],
+    "messages_SAS1": [
+        2945,
+        "Jun 28 12:30:01 SAS1 systemd: Stopping User Slice of root.\n"
+    ],
+    "cron_SAR1STR1": [
+        339,
+        "Jun 28 12:30:01 SAR1STR1 CROND[22662]: (root) CMD (/usr/lib64/sa/sa1 1 1)\n"
+    ],
+    "secure_SAR1STR1": [
+        17,
+        "Jun 28 00:50:30 SAR1STR1 sshd[16678]: pam_unix(sshd:session): session closed for user adacs\n"
+    ],
+    "dmesg_SAR1STR1": [
+        1354,
+        "Adding 6143996k swap on /dev/sda4.  Priority:-1 extents:1 across:6143996k \n"
+    ],
+    "messages_SAR1STR1": [
+        346,
+        "Jun 28 09:59:01 SAR1STR1 NetworkManager[2173]: <info> Activation (ring1) Stage 5 of 5 (IP Configure Commit) complete.\n"
+    ],
+    "SW1.log_SW1": [
+        207,
+        "06/27/2021 03:46:48.20 <Warn:STP.EnblPortTimerExp> Port (25) is re-enabled as the disable time out has expired.\n"
     ]
 }
